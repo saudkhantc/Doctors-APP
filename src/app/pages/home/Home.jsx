@@ -7,20 +7,22 @@ import PartnerOkadoc from "../../components/partnerOkadoc/PartnerOkadoc";
 import TrustedHealthcare from "../../components/trustedHealthcare/TrustedHealthcare";
 import Footer from "../../components/footer/Footer";
 import FindDoctor from "../../components/findDoctor/FindDoctor";
+import DoctorProfile from "@/app/components/doctorsprofile/DoctorProfile";
+import WhyChooseElbalto from "@/app/components/whychooseelbalto/WhyChooseElbalto";
 
 export default function Home() {
   return (
     <main className="min-h-screen  ">
-      
-    <Navbar />
-    {/* <FindDoctor/> */}
-  <LandingPage/>
-  <PopularSpecial />
-  <Okadac/>
-  <PartnerOkadoc />
-  <TrustedHealthcare />
-  <Footer />
-   
+      <Navbar />
+      {/* <FindDoctor/> */}
+      <LandingPage />
+      <PopularSpecial />
+      <Okadac />
+      <PartnerOkadoc />
+      <TrustedHealthcare />
+      <Footer />
+      <DoctorProfile />
+      <WhyChooseElbalto/>
     </main>
   );
 }
