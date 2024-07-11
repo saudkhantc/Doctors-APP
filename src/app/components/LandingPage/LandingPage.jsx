@@ -76,7 +76,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div>
-              <Image src={homehealth} width={50} />
+              <Image src={homehealth} width={50} alt="img" />
             </div>
           </div>
           <div className="md:ps-10 mt-20 flex bg-[#31A598] md:w-[360px] gap-10 p-5 rounded-lg md:ms-10">
@@ -87,7 +87,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="ms-2">
-              <Image src={pharmacy} width={60} />
+              <Image src={pharmacy} width={60} alt="img" />
             </div>
           </div>
           <div className="md:ps-10 mt-20 flex bg-[#007ACC] md:w-[360px] md:gap-32 p-5 rounded-lg md:ms-10">
@@ -99,7 +99,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div>
-              <Image src={pcrtest} width={60} />
+              <Image src={pcrtest} width={60} alt="img" />
             </div>
           </div>
          

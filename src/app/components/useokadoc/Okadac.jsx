@@ -17,7 +17,7 @@ const Okadac = () => {
         <div className="md:flex md:gap-16 md:mt-12">
           <div className="md:w-[510px] md:mt-0 mt-10 md:p-0 p-4">
             <div className="bg-white w-[100px] rounded-full h-[100px] flex md:items-center text-center mx-auto  ">
-              <Image src={lightingblue} className="  ms-6" />
+              <Image src={lightingblue} className="  ms-6" alt="img" />
             </div>
             <div className="">
               <p className="font-bold mt-3 text-xl text-center">
@@ -33,7 +33,7 @@ const Okadac = () => {
           </div>
           <div className="md:w-[510px] md:mt-0 mt-5 md:p-0 p-4">
             <div className="bg-white w-[100px] rounded-full h-[100px] flex items-center mx-auto  ">
-              <Image src={calendar} className=" ms-6" />
+              <Image src={calendar} className=" ms-6"  alt="img" />
             </div>
             <div className="">
               <p className="font-bold mt-3 text-xl text-center">
@@ -49,7 +49,7 @@ const Okadac = () => {
           </div>
           <div className="md:w-[510px] md:mt-0 mt-5 md:p-0 p-4">
             <div className="bg-white w-[100px] rounded-full h-[100px] flex items-center mx-auto  ">
-              <Image src={shield} className=" ms-6" />
+              <Image src={shield} className=" ms-6"  alt="img" />
             </div>
             <div className="">
               <p className="font-bold mt-3 text-xl text-center">
@@ -68,7 +68,7 @@ const Okadac = () => {
       <div className=" ">
         <div className="md:flex items-center bg-white md:pt-20">
           <div className="flex justify-center">
-            <Image src={phonedemo} className="md:w-[500px]" />
+            <Image src={phonedemo} className="md:w-[500px]"  alt="img" />
           </div>
           <div>
             <h2 className="md:text-4xl text-2xl md:ps-2 font-semibold md:text-start text-center">
@@ -80,9 +80,9 @@ const Okadac = () => {
               pocket.
             </p>
             <div className="md:flex p-4 mt-5 gap-4 md:justify-start justify-center">
-              <Image src={btnappstore} />
-              <Image src={btngoogleplay} />
-              <Image src={btnappgallery} />
+              <Image src={btnappstore}  alt="img" />
+              <Image src={btngoogleplay}  alt="img" />
+              <Image src={btnappgallery}   alt="img"/>
             </div>
           </div>
         </div>

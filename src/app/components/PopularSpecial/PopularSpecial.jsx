@@ -29,15 +29,13 @@ const PopularSpecial = () => {
           </div>
           <div className="flex flex-wrap md:gap-8 gap-4 ">
             {specialities.map((speciality) => (
-              <Link href={`/doctor/${speciality.id}`}>
-                <div
-                  key={speciality.id}
-                  className="w-[180px] h-[180px] shadow-xl border border-gray-100 items-center rounded-lg justify-center md:gap-7 gap-5 flex flex-col cursor-pointer"
-                >
-                  {speciality.icon}
-                  <span className="text-lg">{speciality.name}</span>
-                </div>
-              </Link>
+              <div
+              key={speciality.id}
+              className="w-[180px] h-[180px] shadow-xl border border-gray-100 items-center rounded-lg justify-center md:gap-7 gap-5 flex flex-col"
+            >
+               {speciality.icon}
+              <span className="text-lg">{speciality.name}</span>
+            </div>
             ))}
 
             <div className="w-[180px] h-[180px] flex items-center rounded-lg justify-center flex-col md:gap-8 gap-6">

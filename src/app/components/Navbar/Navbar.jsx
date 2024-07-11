@@ -26,7 +26,7 @@ const Navbar = () => {
                     </button>
                     <div className=' '>
                     <Link href="/" className="text-[#56BFDD]  ">
-                        <Image src={logo} width={110} />
+                        <Image src={logo} width={110} alt='img' />
                     </Link>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ const Navbar = () => {
                         <ul className='space-y-4'>
                             <li>
                                 <Link href="/" >
-                                <Image src={logo} width={110} />
+                                <Image src={logo} width={110} alt='img' />
                                 </Link>
                             </li>
                            

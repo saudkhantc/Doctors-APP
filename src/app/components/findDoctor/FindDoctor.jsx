@@ -20,7 +20,7 @@ const FindDoctor=()=>{
             <span>Distance</span>
         </div>
         <div className="border border-gray-300 p-3  rounded-md flex space-x-2">
-        <Image src={img1} />
+        <Image src={img1} alt="filter" />
             <span>More Filters</span>
         </div>
 

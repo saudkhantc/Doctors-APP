@@ -14,11 +14,9 @@ const PartnerOkadoc=()=>{
         <div>
         <CustomButton buttonText="Learn More"/>
         </div>
-        
         </div>
-
         <div>
-            <Image src={img1} />
+            <Image src={img1} alt="img1" />
         </div>
 
         </div>

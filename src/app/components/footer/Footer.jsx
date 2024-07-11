@@ -81,7 +81,7 @@ const Footer = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="mb-6 lg:mb-0">
-              <Image src={logo} width={120} />
+              <Image src={logo} alt="logo" width={120} />
             </div>
             <div className="mb-6 lg:mb-0">
               <h3 className="font-semibold text-2xl mb-6 ">About Okadoc</h3>
@@ -111,22 +111,22 @@ const Footer = () => {
             <div>
               <div className="grid grid-cols-3 sm:grid-cols-5 gap-14 mb-6">
                 <div className="bg-[#E5F2FA] w-[60px] h-[60px] rounded-full flex items-center justify-center">
-                  <Image src={img1} width={14} />
+                  <Image src={img1} width={14} alt="img" />
                 </div>
                 <div className="bg-[#E5F2FA] w-[60px] h-[60px] rounded-full flex items-center justify-center">
-                  <Image src={img2} width={30} />
+                  <Image src={img2} width={30} alt="img" />
                 </div>
                 <div className="bg-[#E5F2FA] w-[60px] h-[60px] rounded-full flex items-center justify-center">
-                  <Image src={img3} width={30} />
+                  <Image src={img3} width={30}  alt="img"/>
                 </div>
                 <div className="bg-[#E5F2FA] w-[60px] h-[60px] rounded-full flex items-center justify-center">
-                  <Image src={img4} width={30} />
+                  <Image src={img4} width={30} alt="img" />
                 </div>
                 <div className="bg-[#E5F2FA] w-[60px] h-[60px] rounded-full flex items-center justify-center">
-                  <Image src={img5} width={30} />
+                  <Image src={img5} width={30}  alt="img"/>
                 </div>
               </div>
-              <Image src={img6} width={70} />
+              <Image src={img6} width={70} alt="img" />
             </div>
           </div>
         </div>
