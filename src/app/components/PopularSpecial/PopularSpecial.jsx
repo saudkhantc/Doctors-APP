@@ -1,4 +1,6 @@
+"use client";
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { LuStethoscope, LuBaby } from "react-icons/lu";
 import { LiaTeethSolid } from "react-icons/lia";
 import { TbGenderDemigirl } from "react-icons/tb";
@@ -10,6 +12,9 @@ import img1 from "../../../../public/Images/summus.png"
 
 const PopularSpecial = () => {
 
+  const router = useRouter();
+
+  
   const specialities = [
     { id: 1, name: "GP", icon: <LuStethoscope size={45} color="#007ACC" /> },
     { id: 2, name: "Pediatrician", icon: <LuBaby size={45} color="#007ACC" /> },
@@ -30,12 +35,13 @@ const PopularSpecial = () => {
           <div className="flex flex-wrap md:gap-8 gap-4 ">
             {specialities.map((speciality) => (
               <div
-              key={speciality.id}
-              className="w-[180px] h-[180px] shadow-xl border border-gray-100 items-center rounded-lg justify-center md:gap-7 gap-5 flex flex-col"
-            >
-               {speciality.icon}
-              <span className="text-lg">{speciality.name}</span>
-            </div>
+      key={speciality.id}
+      onClick={() =>router.push("/pages/doctors")}
+      className="w-[180px] h-[180px] shadow-xl border border-gray-100 items-center rounded-lg justify-center md:gap-7 gap-5 flex flex-col cursor-pointer"
+    >
+      {speciality.icon}
+      <span className="text-lg">{speciality.name}</span>
+    </div>
             ))}
 
             <div className="w-[180px] h-[180px] flex items-center rounded-lg justify-center flex-col md:gap-8 gap-6">
