@@ -8,7 +8,7 @@ import homehealth from "../../../assets/images/homehealth.png";
 import doctorvisit from "../../../assets/images/doctorvisit.png";
 import pharmacy from "../../../assets/images/pharmacy.png";
 import pcrtest from "../../../assets/images/pcrtest.png";
-import '@/app/components/LandingPage/LandingPage.css';
+// import '@/app/components/LandingPage/LandingPage.css';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const LandingPage = () => {
