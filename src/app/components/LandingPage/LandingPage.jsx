@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import quadrantslab from "../../../src/assets/images/quadrantslab.png";
-import covidtest from "../../../src/assets/images/covidtest.png";
-import teleconsultation from "../../../src/assets/images/teleconsultation.png";
-import IVdrip from "../../../src/assets/images/IVdrip.png";
-import homehealth from "../../../src/assets/images/homehealth.png";
-import doctorvisit from "../../../src/assets/images/doctorvisit.png";
-import pharmacy from "../../../src/assets/images/pharmacy.png";
-import pcrtest from "../../../src/assets/images/pcrtest.png";
+import quadrantslab from "../../../assets/images/quadrantslab.png";
+import covidtest from "../../../assets/images/covidtest.png";
+import teleconsultation from "../../../assets/images/teleconsultation.png";
+import IVdrip from "../../../assets/images/IVdrip.png";
+import homehealth from "../../../assets/images/homehealth.png";
+import doctorvisit from "../../../assets/images/doctorvisit.png";
+import pharmacy from "../../../assets/images/pharmacy.png";
+import pcrtest from "../../../assets/images/pcrtest.png";
 import "./LandingPage.css";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 

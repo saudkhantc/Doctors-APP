@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from "../../../../public/Images/okadoc logo.jpeg"
+import logo from "../../../assets/images/appLogo.svg"
 import { LuMapPin } from "react-icons/lu";
 import { GrNext } from "react-icons/gr";
 import { FaGlobe,FaBars, FaTimes } from 'react-icons/fa';
@@ -18,15 +18,15 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-white p-4 md:px-10  ">
+        <nav className="bg-white p-4 md:px-10 border border-b-gray-300 ">
        <div className="flex  md:justify-around  flex-wrap items-baseline ">
                 <div className="flex items-center space-x-4 ">
                     <button onClick={toggleMenu} className="md:hidden text-2xl">
                         <FaBars />
                     </button>
                     <div className=' '>
-                    <Link href="/" className="text-[#56BFDD] text-4xl  ">
-                        Okadoc
+                    <Link href="/" className="text-[#56BFDD]  ">
+                        <Image src={logo} width={110} />
                     </Link>
                     </div>
                 </div>
@@ -75,8 +75,8 @@ const Navbar = () => {
                         </div>
                         <ul className='space-y-4'>
                             <li>
-                                <Link href="/" className="text-[#56BFDD] text-4xl">
-                                    Okadoc
+                                <Link href="/" >
+                                <Image src={logo} width={110} />
                                 </Link>
                             </li>
                            
