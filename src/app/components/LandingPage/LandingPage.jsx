@@ -16,7 +16,7 @@ const LandingPage = () => {
     <>
       <div className="md:p-5 bg-[#F0F7FC] md:h-screen">
         <div className="md:p-10 p-5 items-center">
-          <h1 className="md:text-[40px] font-bold">Healthcare made simple</h1>
+          <h1 className="md:text-[40px] font-bold text-black">Healthcare made simple</h1>
           <h3 className="text-[20px]">
             Book a doctor and order healthcare services to your home.
           </h3>

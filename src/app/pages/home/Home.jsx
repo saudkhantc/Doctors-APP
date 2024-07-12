@@ -9,6 +9,8 @@ import Footer from "../../components/footer/Footer";
 import FindDoctor from "../../components/findDoctor/FindDoctor";
 import DoctorProfile from "@/app/components/doctorsprofile/DoctorProfile";
 import WhyChooseElbalto from "@/app/components/whychooseelbalto/WhyChooseElbalto";
+import Services from "@/app/components/services/Services";
+import OurDoctors from "@/app/components/ourdoctors/OurDoctors";
 
 export default function Home() {
   return (
@@ -23,6 +25,9 @@ export default function Home() {
       <Footer />
       <DoctorProfile />
       <WhyChooseElbalto/>
+      <Services/>
+      <OurDoctors/>
+      
     </main>
   );
 }
