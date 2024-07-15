@@ -19,14 +19,14 @@ export default function Home() {
       {/* <FindDoctor/> */}
       <LandingPage />
       <PopularSpecial />
+      <Footer/>
       <Okadac />
       <PartnerOkadoc />
       <TrustedHealthcare />
-      <Footer />
       <DoctorProfile />
       <WhyChooseElbalto/>
       <Services/>
-      <OurDoctors/>
+      {/* <OurDoctors/> */}
       
     </main>
   );
