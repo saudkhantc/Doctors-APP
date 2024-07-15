@@ -5,7 +5,7 @@ import appstore from "../../../assets/images/appstore.png";
 const Footer = () => {
   return (
     <>
-      <div className="bg-white p-10 ">
+      <div className="bg-white p-10">
         <div className="md:flex justify-around w-full gap-10 md:ps-16">
           <div className="md:w-[420px]">
             <h1 className="text-3xl font-bold ">Learn More</h1>
@@ -51,9 +51,19 @@ const Footer = () => {
                 start consulting.
               </p>
             </div>
-            <div className="flex items-center ">
-              <Image src={playstore} className="md:w-[170px] md:h-[130px]" />
-              <Image src={appstore} className="md:w-[170px] md:h-[110px]" />
+            <div className="md:flex items-center md:w-[300px] md:h-[200px] md:me-10">
+              <div>
+                <Image
+                  src={playstore}
+                  className="md:w-[170px] md:h-[130px] w-[200px] h-[120px]"
+                />
+              </div>
+              <div>
+                <Image
+                  src={appstore}
+                  className="md:w-[150px] md:h-[110px] md:ms-0 ms-5 w-[160px] h-[100px]"
+                />
+              </div>
             </div>
           </div>
         </div>

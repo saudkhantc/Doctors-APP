@@ -15,7 +15,7 @@ import './PopularSpecial.css';
 const PopularSpecial = () => {
   return (
     <>
-      <div className="p-5 md:w[90%] mx-auto">
+      <div className="p-5 md:w-[90%] mx-auto">
         <div>
           <div className="flex justify-center">
             <h1 className="text-4xl font-bold ">Our Popular Specialties</h1>
