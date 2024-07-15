@@ -21,7 +21,7 @@ const data = [
     },
     {
       imgSrc: img4,
-      number: '50+',
+      number: '100+',
       description: 'Best Award Winner',
     },
    
@@ -29,8 +29,8 @@ const data = [
 const MidBanner=()=>{
     return(
         <>
-        <div className="bg-[#11AED6] flex items-center justify-center p-20">
-        <div className="flex gap-20">
+        <div className="bg-[#11AED6] flex   items-center justify-center p-20">
+        <div className="flex flex-wrap md:gap-20 gap-10">
       {data.map((item, index) => (
         <div key={index} className="flex gap-5">
           <div className="bg-gray-100 w-[80px] h-[80px] rounded-full flex items-center justify-center">
