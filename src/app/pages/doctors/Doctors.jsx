@@ -5,6 +5,8 @@ import Navbar from "@/app/components/Navbar/Navbar";
 import img from "../../../assets/images/doctor1.png"
 import { CgSmartHomeRefrigerator } from "react-icons/cg";
 import { GrNext } from "react-icons/gr";
+import Footer from "@/app/components/footer/Footer";
+import Navigation from "@/app/components/navigation/Navigation";
 
 const Doctors=()=>{
     const data = [
@@ -89,8 +91,7 @@ const Doctors=()=>{
         <>
         <Navbar />
         <FindDoctor />
-        <div className="flex md:flex-row flex-col w-full  md:px-20 px-10  py-10  gap-5">
-        <div className=" flex gap-8 w-[70vw]  flex-wrap">
+        <div className="flex md:flex-row  md:px-20 px-6  md:py-10 py-6  gap-8 flex-wrap ">
         {data.map((item) => (
                 <div key={item.id} className="flex flex-col rounded-lg bg-white p-4 gap-6 w-[370px] h-auto">
                     <div className="flex gap-4 border-b p-2 border-b-black">
@@ -134,10 +135,8 @@ const Doctors=()=>{
             ))}
         </div>
 
-        <div className="w-[30vw] border border-red-500">
-
-        </div>
-        </div>
+        <Navigation />
+        <Footer />
 
         </>
     )

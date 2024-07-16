@@ -16,13 +16,13 @@ const TrustedHealthcare=()=>{
             <h1 className="text-3xl font-semibold text-center">Trusted by healthcare leaders</h1>
         </div>
         <div className="flex md:flex-row flex-col flex-wrap items-center justify-center ">
-            <Image src={img1} />
-            <Image src={img2} />
-            <Image src={img3} />
-            <Image src={img4} />
-            <Image src={img5} />
-            <Image src={img6} />
-            <Image src={img7} width={400}/>
+            <Image src={img1} alt="img" />
+            <Image src={img2} alt="img"  />
+            <Image src={img3} alt="img"  />
+            <Image src={img4} alt="img"  />
+            <Image src={img5} alt="img"  />
+            <Image src={img6} alt="img"  />
+            <Image src={img7} width={400} alt="img" />
         </div>
 
         </div>

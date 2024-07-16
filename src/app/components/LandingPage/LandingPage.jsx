@@ -1,3 +1,5 @@
+"use client";
+import { useRouter } from 'next/navigation';
 import React from "react";
 import Image from "next/image";
 import quadrantslab from "../../../assets/images/quadrantslab.png";
@@ -8,10 +10,11 @@ import homehealth from "../../../assets/images/homehealth.png";
 import doctorvisit from "../../../assets/images/doctorvisit.png";
 import pharmacy from "../../../assets/images/pharmacy.png";
 import pcrtest from "../../../assets/images/pcrtest.png";
-import "./landingpage.css";
+// import '@/app/components/LandingPage/LandingPage.css';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const LandingPage = () => {
+  const router = useRouter();
   return (
     <>
       <div className="md:p-5 bg-[#F0F7FC] md:h-screen">
@@ -66,9 +69,9 @@ const LandingPage = () => {
             <p className="font-bold text-center text-[14px]">Home Health</p>
           </div>
         </div>
-        <div className="flex flex-wrap md:justify-start justify-center h-fit">
-          <div className="md:ps-5 mt-20 md:flex bg-[#007ACC] md:w-[360px] md:gap-10 p-5 rounded-lg md:ms-10">
-            <div className=" ">
+        <div className="md:flex">
+          <div className="md:ps-10 mt-20 flex bg-[#007ACC] md:w-[360px] md:gap-10 p-5 rounded-lg md:ms-10">
+            <div className="cursor-pointer "  onClick={() =>router.push("/pages/bookDoctor")}>
               <h1 className="text-white font-bold">At Home Nurses & Doctors</h1>
               <div className="flex items-center">
                 <p className="text-white ">Explore Option</p>

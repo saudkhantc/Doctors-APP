@@ -1,4 +1,12 @@
-import React from "react";
+"use client";
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { LuStethoscope, LuBaby } from "react-icons/lu";
+import { LiaTeethSolid } from "react-icons/lia";
+import { TbGenderDemigirl } from "react-icons/tb";
+import { MdOutlineFaceRetouchingNatural } from "react-icons/md";
+import { GrNext } from "react-icons/gr";
+import CustomButton from "../customButton/CustomBotton";
 import Image from "next/image";
 import clini06 from "../../../assets/images/clini06.png";
 import clini02 from "../../../assets/images/clini02.png";
@@ -13,6 +21,19 @@ import { IoIosArrowForward } from "react-icons/io";
 import "./PopularSpecial.css";
 
 const PopularSpecial = () => {
+
+  const router = useRouter();
+
+  
+  const specialities = [
+    { id: 1, name: "GP", icon: <LuStethoscope size={45} color="#007ACC" /> },
+    { id: 2, name: "Pediatrician", icon: <LuBaby size={45} color="#007ACC" /> },
+    { id: 3, name: "Dentist", icon: <LiaTeethSolid size={45} color="#007ACC" /> },
+    { id: 4, name: "Gynaecologist", icon: <TbGenderDemigirl size={45} color="#007ACC" /> },
+    { id: 5, name: "Dermatologist", icon: <MdOutlineFaceRetouchingNatural size={45} color="#007ACC" /> },
+
+  ];
+
   return (
     <>
       <div className="p-5 md:w[90%] mx-auto">
@@ -86,60 +107,17 @@ const PopularSpecial = () => {
               <h4 className="ms-5 text-[#1B5A90] text-2xl "> Corneal Ulcer</h4>
             </div>
           </div>
-          <div className="flex flex-col items-center">
-            <div className="">
-              <Image src={clinic03} className="" />
+          <div className="flex flex-wrap md:gap-8 gap-4 ">
+            {specialities.map((speciality) => (
               <div
-                style={{
-                  width: "110px",
-                  height: "110px",
-                  backgroundColor: "#1B5A90",
-                  borderRadius: "100% 0px",
-                  transform: "rotate(45deg)",
-                  textAlign: "center",
-                  margin: " -40px 80px auto",
-                  justifyContent: "center",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                <p
-                  className="rounded-full text-xl  bg-white"
-                  style={{ transform: "rotate(-40deg)" }}
-                >
-                  <IoIosArrowForward />
-                </p>
-              </div>
-            </div>
-            <div className="mt-3">
-              <h4 className="ms-5 text-[#1B5A90] text-2xl "> Keratoconus</h4>
-            </div>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="">
-              <Image src={clini01} className="" />
-            </div>
-            <div
-              style={{
-                width: "110px",
-                height: "110px",
-                backgroundColor: "#1B5A90",
-                borderRadius: "100% 0px",
-                transform: "rotate(45deg)",
-                textAlign: "center",
-                margin: " -40px 0 auto",
-                justifyContent: "center",
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <p
-                className="rounded-full text-xl bg-white"
-                style={{ transform: "rotate(-40deg)" }}
-              >
-                <IoIosArrowForward />
-              </p>
-            </div>
+      key={speciality.id}
+      onClick={() =>router.push("/pages/doctors")}
+      className="w-[180px] h-[180px] shadow-xl border border-gray-100 items-center rounded-lg justify-center md:gap-7 gap-5 flex flex-col cursor-pointer"
+    >
+      {speciality.icon}
+      <span className="text-lg">{speciality.name}</span>
+    </div>
+            ))}
 
             <div className="mt-3">
               <h4 className="ms-5 text-[#1B5A90] text-2xl "> Glaucoma</h4>
