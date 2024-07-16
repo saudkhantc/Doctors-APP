@@ -10,6 +10,11 @@ import FindDoctor from "../../components/findDoctor/FindDoctor";
 import BetterHealth from "@/app/components/betterHealth/BetterHealth";
 import WhoWeAre from "@/app/components/whoWeAre/WhoWeAre";
 import MidBanner from "@/app/components/midBanner/MidBanner";
+import OurDoctors from "@/app/components/ourdoctors/OurDoctors";
+import DoctorProfile from "@/app/components/doctorsprofile/DoctorProfile";
+import Services from "@/app/components/services/Services";
+
+
 
 export default function Home() {
   return (
@@ -18,7 +23,9 @@ export default function Home() {
     <BetterHealth />
     <WhoWeAre />
     <MidBanner />
-
+    <PopularSpecial />
+    <Footer />
+   
 
 
 
