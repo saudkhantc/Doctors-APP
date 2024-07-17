@@ -11,6 +11,7 @@ import DoctorProfile from "@/app/components/doctorsprofile/DoctorProfile";
 import WhyChooseElbalto from "@/app/components/whychooseelbalto/WhyChooseElbalto";
 import Services from "@/app/components/services/Services";
 import OurDoctors from "@/app/components/ourdoctors/OurDoctors";
+import DoctorList from "@/app/components/doctorlist/DoctorList";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       {/* <FindDoctor/> */}
       <LandingPage />
       <PopularSpecial />
+      <DoctorList/>
       <Footer/>
       <Okadac />
       <PartnerOkadoc />

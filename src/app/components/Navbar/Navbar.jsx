@@ -25,8 +25,8 @@ const Navbar = () => {
             <FaBars />
           </button>
           <div className=" ">
-            <Link href="/" className="text-[#56BFDD]  ">
-              <Image src={logo} width={110} alt="img" />
+            <Link href="/" className="text-white">
+              <h1 className="text-4xl font-white  bg-blue-400  p-3">Careify</h1>
             </Link>
           </div>
         </div>

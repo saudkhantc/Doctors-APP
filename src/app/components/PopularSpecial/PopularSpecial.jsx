@@ -1,319 +1,64 @@
-"use client";
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { LuStethoscope, LuBaby } from "react-icons/lu";
-import { LiaTeethSolid } from "react-icons/lia";
-import { TbGenderDemigirl } from "react-icons/tb";
-import { MdOutlineFaceRetouchingNatural } from "react-icons/md";
-import { GrNext } from "react-icons/gr";
-import CustomButton from "../customButton/CustomBotton";
-import Image from "next/image";
-import clini06 from "../../../assets/images/clini06.png";
-import clini02 from "../../../assets/images/clini02.png";
-import clinic03 from "../../../assets/images/clinic03.png";
-import clini01 from "../../../assets/images/clini01.png";
-import eyespecialdoc01 from "../../../assets/images/eyespecialdoc01.jpg";
-import eyespecialdoc02 from "../../../assets/images/eyespecialdoc02.jpg";
-import eyespecialdoc03 from "../../../assets/images/eyespecialdoc03.jpg";
-import { FaCircleArrowRight } from "react-icons/fa6";
-import { FaStar } from "react-icons/fa";
-import { IoIosArrowForward } from "react-icons/io";
-import "./PopularSpecial.css";
+
+// border-4 border-red-500
+import React from "react";
+import { TbDental } from "react-icons/tb";
+import { FiGitBranch } from "react-icons/fi";
+import { FaRegFaceGrinTears } from "react-icons/fa6";
+import { SlArrowRight } from "react-icons/sl";
+import { GiPulleyHook } from "react-icons/gi";
+import { TbVirusSearch } from "react-icons/tb";
 
 const PopularSpecial = () => {
-
-  const router = useRouter();
-
-  
-  const specialities = [
-    { id: 1, name: "GP", icon: <LuStethoscope size={45} color="#007ACC" /> },
-    { id: 2, name: "Pediatrician", icon: <LuBaby size={45} color="#007ACC" /> },
-    { id: 3, name: "Dentist", icon: <LiaTeethSolid size={45} color="#007ACC" /> },
-    { id: 4, name: "Gynaecologist", icon: <TbGenderDemigirl size={45} color="#007ACC" /> },
-    { id: 5, name: "Dermatologist", icon: <MdOutlineFaceRetouchingNatural size={45} color="#007ACC" /> },
-
-  ];
-
   return (
-    <>
-      <div className="p-5 md:w[90%] mx-auto">
+    <div className="bg-white">
+      <div className="w-[90%] mx-auto pt-10">
         <div>
-          <div className="flex justify-center">
-            <h1 className="text-4xl font-bold ">Our Popular Specialties</h1>
+          <h2 className="font-semibold text-2xl md:text-3xl">Popular Specialities</h2>
+          <p className="pt-5 text-base md:text-lg">
+            Find your doctor through our wide directory of Specialities
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pt-10">
+          <div className="p-10 items-center shadow-xl flex flex-col justify-center">
+            <FiGitBranch className="text-5xl text-blue-500" />
+            <p className="text-xl md:text-2xl pt-5" style={{ color: "#848484" }}>
+              GP
+            </p>
           </div>
-          <div className="flex justify-center mt-4">
-            <h3 className="text-xl text-[#52A6B7]">
-              The Great Place Of Eyecare Hospital Center
-            </h3>
+          <div className="p-10 items-center shadow-xl flex flex-col justify-center">
+            <FaRegFaceGrinTears className="text-5xl text-blue-500" />
+            <p className="text-xl md:text-2xl pt-5" style={{ color: "#848484" }}>
+              Pediatrician
+            </p>
+          </div>
+          <div className="p-10 items-center shadow-xl flex flex-col justify-center">
+            <TbDental className="text-5xl text-blue-500" />
+            <p className="text-xl md:text-2xl pt-5" style={{ color: "#848484" }}>
+              Dentist
+            </p>
           </div>
         </div>
-        <div className="md:flex  md:w-[90%] mt-5 gap-5 p-5 mx-auto">
-          <div className="  flex flex-col items-center">
-            <div className="">
-              <Image src={clini06} className="" />
-              <div
-                style={{
-                  width: "110px",
-                  height: "110px",
-                  backgroundColor: "#1B5A90",
-                  borderRadius: "100% 0px",
-                  transform: "rotate(45deg)",
-                  textAlign: "center",
-                  margin: " -40px 80px auto",
-                  justifyContent: "center",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                <p
-                  className="rounded-full text-xl bg-white"
-                  style={{ transform: "rotate(-40deg)" }}
-                >
-                  <IoIosArrowForward />
-                </p>
-              </div>
-            </div>
-            <div className="mt-3">
-              <h4 className="ms-5 text-[#1B5A90] text-2xl "> Cataract</h4>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pt-10">
+          <div className="p-10 items-center shadow-xl flex flex-col justify-center">
+            <GiPulleyHook className="text-5xl text-blue-500" />
+            <p className="text-xl md:text-2xl pt-5" style={{ color: "#848484" }}>
+              Gynaecologist
+            </p>
           </div>
-          <div className="flex flex-col items-center">
-            <div className="">
-              <Image src={clini02} className="" />
-              <div
-                style={{
-                  width: "110px",
-                  height: "110px",
-                  backgroundColor: "#1B5A90",
-                  borderRadius: "100% 0px",
-                  transform: "rotate(45deg)",
-                  textAlign: "center",
-                  margin: " -40px 80px auto",
-                  justifyContent: "center",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                <p
-                  className="rounded-full text-xl bg-white"
-                  style={{ transform: "rotate(-40deg)" }}
-                >
-                  <IoIosArrowForward />
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-3">
-              <h4 className="ms-5 text-[#1B5A90] text-2xl "> Corneal Ulcer</h4>
-            </div>
+          <div className="p-10 items-center shadow-xl flex flex-col justify-center">
+            <TbVirusSearch className="text-5xl text-blue-500" />
+            <p className="text-xl md:text-2xl pt-5" style={{ color: "#848484" }}>
+              Dermatologist
+            </p>
           </div>
-          <div className="flex flex-wrap md:gap-8 gap-4 ">
-            {specialities.map((speciality) => (
-              <div
-      key={speciality.id}
-      onClick={() =>router.push("/pages/doctors")}
-      className="w-[180px] h-[180px] shadow-xl border border-gray-100 items-center rounded-lg justify-center md:gap-7 gap-5 flex flex-col cursor-pointer"
-    >
-      {speciality.icon}
-      <span className="text-lg">{speciality.name}</span>
-    </div>
-            ))}
-
-            <div className="mt-3">
-              <h4 className="ms-5 text-[#1B5A90] text-2xl "> Glaucoma</h4>
-            </div>
-          </div>
-        </div>
-        <div className="md:flex  md:w-[90%] mt-5 gap-5 p-5 mx-auto">
-          <div className="  flex flex-col items-center">
-            <div className="">
-              <Image src={clini06} className="" />
-              <div
-                style={{
-                  width: "110px",
-                  height: "110px",
-                  backgroundColor: "#1B5A90",
-                  borderRadius: "100% 0px",
-                  transform: "rotate(45deg)",
-                  textAlign: "center",
-                  margin: " -40px 80px auto",
-                  justifyContent: "center",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                <p
-                  className="rounded-full text-xl bg-white"
-                  style={{ transform: "rotate(-40deg)" }}
-                >
-                  <IoIosArrowForward />
-                </p>
-              </div>
-            </div>
-            <div className="mt-3">
-              <h4 className="ms-5 text-[#1B5A90] text-2xl "> Cataract</h4>
-            </div>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="">
-              <Image src={clini02} className="" />
-              <div
-                style={{
-                  width: "110px",
-                  height: "110px",
-                  backgroundColor: "#1B5A90",
-                  borderRadius: "100% 0px",
-                  transform: "rotate(45deg)",
-                  textAlign: "center",
-                  margin: " -40px 80px auto",
-                  justifyContent: "center",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                <p
-                  className="rounded-full text-xl bg-white"
-                  style={{ transform: "rotate(-40deg)" }}
-                >
-                  <IoIosArrowForward />
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-3">
-              <h4 className="ms-5 text-[#1B5A90] text-2xl "> Corneal Ulcer</h4>
-            </div>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="">
-              <Image src={clinic03} className="" />
-              <div
-                style={{
-                  width: "110px",
-                  height: "110px",
-                  backgroundColor: "#1B5A90",
-                  borderRadius: "100% 0px",
-                  transform: "rotate(45deg)",
-                  textAlign: "center",
-                  margin: " -40px 80px auto",
-                  justifyContent: "center",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                <p
-                  className="rounded-full text-xl  bg-white"
-                  style={{ transform: "rotate(-40deg)" }}
-                >
-                  <IoIosArrowForward />
-                </p>
-              </div>
-            </div>
-            <div className="mt-3">
-              <h4 className="ms-5 text-[#1B5A90] text-2xl "> Keratoconus</h4>
-            </div>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="">
-              <Image src={clini01} className="" />
-            </div>
-            <div
-              style={{
-                width: "110px",
-                height: "110px",
-                backgroundColor: "#1B5A90",
-                borderRadius: "100% 0px",
-                transform: "rotate(45deg)",
-                textAlign: "center",
-                margin: " -40px 0 auto",
-                justifyContent: "center",
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <p
-                className="rounded-full text-xl bg-white"
-                style={{ transform: "rotate(-40deg)" }}
-              >
-                <IoIosArrowForward />
-              </p>
-            </div>
-
-            <div className="mt-3">
-              <h4 className="ms-5 text-[#1B5A90] text-2xl "> Glaucoma</h4>
-            </div>
-          </div>
-        </div>
-        <div className="md:w-[90%] mt-10  p-5 mx-auto">
-          <div>
-            <div className="flex justify-center">
-              <h1 className="text-4xl font-bold ">Our Popular Specialties</h1>
-            </div>
-            <div className="flex justify-center mt-4">
-              <h3 className="text-xl text-[#52A6B7]">
-                The Great Place Of Eyecare Hospital Center
-              </h3>
-            </div>
-          </div>
-          <div className="md:flex gap-5  mt-5">
-            <div className="  flex flex-col items-center  bg-white rounded-lg p-5">
-              <div className="relative">
-                <Image
-                  src={eyespecialdoc01}
-                  className="animated-image animated-image:hover"
-                />
-                <h5 className=" font-semibold text-xl">Dr. Carrie Rosario </h5>
-                <div className="flex gap-10 items-center">
-                  <p className="text-[#1B5A90]">MBBS, DOMS - Ophthalmology</p>
-                  <FaCircleArrowRight className="text-5xl text-blue-500" />
-                  <div className="absolute top-10 right-2 bg-white p-1 rounded-full flex items-center gap-2">
-                    <FaStar className="text-yellow-400" />
-                    <p>4.9</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="  flex flex-col items-center md:mt-0 mt-5  bg-white rounded-lg p-5">
-              <div className="relative">
-                <Image
-                  src={eyespecialdoc02}
-                  className="animated-image animated-image:hover"
-                />
-
-                <h5 className=" font-semibold text-xl">Dr. Eric Hansley </h5>
-                <div className="flex gap-10 items-center">
-                  <p className="text-[#1B5A90]">MBBS, MS - Surgeon</p>
-                  <FaCircleArrowRight className="text-5xl text-blue-500" />
-                  <div className="absolute top-10 right-2 bg-white p-1 rounded-full flex items-center gap-2">
-                    <FaStar className="text-yellow-400" />
-                    <p>4.5</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="  flex flex-col items-center md:mt-0 mt-5 bg-white rounded-lg p-5">
-              <div className=" relative ">
-                <Image
-                  src={eyespecialdoc03}
-                  className="animated-image animated-image:hover"
-                />
-                <h5 className=" font-semibold text-xl">Dr. Mary Wilkinson</h5>
-                <div className="flex gap-10 items-center">
-                  <p className="text-[#1B5A90]">MBBS, DNB - Ophthalmology</p>
-                  <FaCircleArrowRight className="text-5xl text-blue-500" />
-                  <div className="absolute top-10 right-2 bg-white p-1 rounded-full flex items-center gap-2">
-                    <FaStar className="text-yellow-400" />
-                    <p>4.3</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="p-10 items-center flex flex-col justify-center">
+            <SlArrowRight className="text-5xl text-blue-500" />
+            <p className="mt-5 text-blue-500 text-xl md:text-2xl">View More</p>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
 export default PopularSpecial;
-// border-2 border-red-600
