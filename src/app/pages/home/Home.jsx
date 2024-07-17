@@ -13,6 +13,10 @@ import MidBanner from "@/app/components/midBanner/MidBanner";
 import OurDoctors from "@/app/components/ourdoctors/OurDoctors";
 import DoctorProfile from "@/app/components/doctorsprofile/DoctorProfile";
 import Services from "@/app/components/services/Services";
+import CreateAccount from "@/app/components/createAccount/CreateAccount";
+import MidBanner2 from "@/app/components/midBanner2/MidBanner2";
+import CollectLead from "@/app/components/collectLead/CollectLead";
+
 
 
 
@@ -21,9 +25,12 @@ export default function Home() {
     <main className="min-h-screen  ">   
     <Navbar />
     <BetterHealth />
+    <PopularSpecial /> 
     <WhoWeAre />
-    <MidBanner />
-    <PopularSpecial />
+    <MidBanner2 />
+    <CreateAccount />
+    <CollectLead />
+    <MidBanner /> 
     <Footer />
    
 
