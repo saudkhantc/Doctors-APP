@@ -17,14 +17,14 @@ const LandingPage = () => {
   const router = useRouter();
   return (
     <>
-      <div className="md:p-5 bg-[#F0F7FC] h-screen">
+      <div className="md:p-5 bg-[#F0F7FC] md:h-screen">
         <div className="md:p-10 p-5 items-center">
-          <h1 className="md:text-[40px] font-bold">Healthcare made simple</h1>
+          <h1 className="md:text-[40px] font-bold text-black">Healthcare made simple</h1>
           <h3 className="text-[20px]">
             Book a doctor and order healthcare services to your home.
           </h3>
         </div>
-        <div className="md:flex items-center gap-5 ">
+        <div className="md:flex items-center gap-5  ">
           <div className="card bg-white md:w-[150px] md:h-[130px] flex flex-col items-center md:ms-10 rounded-xl p-3  ">
             <Image src={quadrantslab} alt="Home Lab Test" width={80} />
             <p className="font-bold text-center text-[14px]">Home Lab Test</p>
@@ -82,7 +82,7 @@ const LandingPage = () => {
               <Image src={homehealth} width={50} alt="img" />
             </div>
           </div>
-          <div className="md:ps-10 mt-20 flex bg-[#31A598] md:w-[360px] gap-10 p-5 rounded-lg md:ms-10">
+          <div className="md:ps-10 mt-20 md:flex bg-[#31A598] md:w-[360px] gap-10 p-5 rounded-lg md:ms-10">
             <div className=" ">
               <h1 className="text-white font-bold">Order Your Prescription </h1>
               <div className="flex items-center">

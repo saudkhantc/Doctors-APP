@@ -5,7 +5,7 @@ import Okadac from "../../components/useokadoc/Okadac";
 import PopularSpecial from "../../components/PopularSpecial/PopularSpecial";
 import PartnerOkadoc from "../../components/partnerOkadoc/PartnerOkadoc";
 import TrustedHealthcare from "../../components/trustedHealthcare/TrustedHealthcare";
-import Footer from "../../components/footer/Footer";
+import Footer from "@/app/components/footer/Footer";
 import FindDoctor from "../../components/findDoctor/FindDoctor";
 import BetterHealth from "@/app/components/betterHealth/BetterHealth";
 import WhoWeAre from "@/app/components/whoWeAre/WhoWeAre";
@@ -16,6 +16,7 @@ import Services from "@/app/components/services/Services";
 import CreateAccount from "@/app/components/createAccount/CreateAccount";
 import MidBanner2 from "@/app/components/midBanner2/MidBanner2";
 import CollectLead from "@/app/components/collectLead/CollectLead";
+import DoctorList from "@/app/components/doctorlist/DoctorList";
 
 
 
@@ -25,12 +26,14 @@ export default function Home() {
     <Navbar />
     <BetterHealth />
     <PopularSpecial /> 
+    <DoctorList />
     <WhoWeAre />
     <MidBanner2 />
     <CreateAccount />
     <CollectLead />
     <MidBanner /> 
     <Footer />
+    
    
 
 
