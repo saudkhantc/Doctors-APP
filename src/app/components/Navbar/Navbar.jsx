@@ -1,93 +1,118 @@
-"use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import logo from "../../../assets/images/appLogo.svg";
-import { LuMapPin } from "react-icons/lu";
-import { GrNext } from "react-icons/gr";
-import { FaGlobe, FaBars, FaTimes } from "react-icons/fa";
-import { FaAngleDown } from "react-icons/fa6";
-import { CiSearch } from "react-icons/ci";
-import CountryDp from "../CountryDropdown/CountryDp";
+import { FlagIcon } from "react-flag-kit";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setMenuOpen(!menuOpen);
   };
 
   return (
-    <nav className="bg-white p-4 md:px-10 border border-b-gray-300 ">
-      <div className="flex  md:justify-around  flex-wrap items-baseline ">
-        <div className="flex items-center space-x-4 ">
-          <button onClick={toggleMenu} className="md:hidden text-2xl">
-            <FaBars />
-          </button>
-          <div className=" ">
-            <Link href="/" className="text-white">
-              <h1 className="text-4xl font-white  bg-blue-400  p-3">Careify</h1>
+    <div>
+      <nav className="p-2 md:px-3 border bg-blue-300 text-black border-b-gray-300">
+        <div className="md:flex justify-between items-center">
+          <div className="md:flex md:justify-between items-center md:w-[75%]">
+            <div>
+              <Link href="/">
+                <h1 className="text-4xl font-white text-black p-3 bg-blue-500 rounded-xl md:text-start text-center">
+                  Hanaa
+                </h1>
+              </Link>
+            </div>
+            <div>
+              <button
+                onClick={toggleMenu}
+                className="md:hidden text-xl md:text-2xl p-2 rounded"
+              >
+                &#9776;
+              </button>
+              <div
+                className={`${
+                  menuOpen ? "block" : "hidden"
+                } md:flex flex-col md:flex-row items-center gap-4`}
+              >
+                <Link href="/">
+                  <h1 className="text-xl pt-2 md:pt-0">Find Doctor</h1>
+                </Link>
+                <Link href="/">
+                  <h1 className="text-xl pt-2 md:pt-0">Medicines</h1>
+                </Link>
+                <Link href="/">
+                  <h1 className="text-xl pt-2 md:pt-0">Lab Tests</h1>
+                </Link>
+                <Link href="/">
+                  <h1 className="text-xl pt-2 md:pt-0">Surgeries</h1>
+                </Link>
+                <Link href="/">
+                  <h1 className="text-xl pt-2 md:pt-0">Diabetes</h1>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative pt-2 md:pt-0 md:px-5 md:flex md:justify-end md:w-[300px]">
+            <div className="flex items-center gap-2 focus:outline-none">
+              <FlagIcon code="US" size={24} />
+              <span>English</span>
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </div>
+            <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg overflow-hidden z-20">
+              <div className="py-1">
+                <Link
+                  href="/"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                >
+                  <div className="flex items-center gap-2">
+                    <FlagIcon code="US" size={24} />
+                    <span>English</span>
+                  </div>
+                </Link>
+                <Link
+                  href="/"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                >
+                  <div className="flex items-center gap-2">
+                    <FlagIcon code="SA" size={24} />
+                    <span>العربية</span>
+                  </div>
+                </Link>
+                <Link
+                  href="/"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                >
+                  <div className="flex items-center gap-2">
+                    <FlagIcon code="IQ" size={24} />
+                    <span>Kurdî</span>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <Link href="/">
+              <h1 className="text-2xl bg-blue-500 p-3 rounded-xl mt-4 md:mt-0 md:text-start text-center">
+                Login/Signup
+              </h1>
             </Link>
           </div>
         </div>
-        <div className=" ">
-          <ul className="flex flex-wrap md:space-x-8 items-center mt-4 md:mt-0 ">
-            <li className="hidden md:flex">
-              <Link href="/" className="flex items-center space-x-2">
-                <LuMapPin size={24} />
-                <span>United Arab Emirates</span>
-              </Link>
-            </li>
-            <li className="w-full md:w-auto">
-              <div className="flex bg-gray-100 p-1 rounded-md items-center mt-4 md:mt-0 ">
-                <CiSearch size={24} className="ml-2" />
-                <input
-                  type="text"
-                  placeholder="Find by speciality, doctor, clinic or hospital"
-                  className="p-2 bg-gray-100 text-black placeholder-gray-400 outline-none w-full md:w-[500px]"
-                />
-                <div className="bg-[#136C62] p-2 rounded-md">
-                  <GrNext color="white" size={24} />
-                </div>
-              </div>
-            </li>
-
-            <li className="hidden md:flex">
-              <CountryDp />
-            </li>
-            <li className="hidden md:block font-semibold">Login</li>
-          </ul>
-        </div>
-      </div>
-
-      {isMenuOpen && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
-          <div className="fixed inset-y-0 left-0 bg-white w-64 p-2">
-            <div className="flex justify-end">
-              <div></div>
-              <button onClick={toggleMenu} className=" mb-4  ">
-                <FaTimes size={24} />
-              </button>
-            </div>
-            <ul className="space-y-4">
-              <li>
-                <Link href="/">
-                  <Image src={logo} width={110} alt="img" />
-                </Link>
-              </li>
-
-              <li>
-                <div className="flex items-center space-x-2">
-                  <span>UAE - EN</span>
-                  <FaAngleDown size={20} />
-                </div>
-              </li>
-              <li className="font-semibold">Login</li>
-            </ul>
-          </div>
-        </div>
-      )}
-    </nav>
+      </nav>
+    </div>
   );
 };
 
