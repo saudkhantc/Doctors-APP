@@ -118,7 +118,7 @@ const PopularSpecial = () => {
               <p className="text-center pt-3 text-gray-500">Neurology</p>
             </div>
           </div>
-          <div className="mt-5 flex justify-center">
+          <div className="md:mt-10 mt-5 flex justify-center">
             <Link href="/">
               <div className="flex items-center gap-4">
                 <h2 className="text-4xl">View All</h2>
