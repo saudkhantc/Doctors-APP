@@ -17,6 +17,7 @@ import CreateAccount from "@/app/components/createAccount/CreateAccount";
 import MidBanner2 from "@/app/components/midBanner2/MidBanner2";
 import CollectLead from "@/app/components/collectLead/CollectLead";
 import DoctorList from "@/app/components/doctorlist/DoctorList";
+import FilterDoctors from "@/app/components/filterDoctors/FilterDoctors";
 
 
 
@@ -33,6 +34,7 @@ export default function Home() {
     <CollectLead />
     <MidBanner /> 
     <Footer />
+      {/* <FilterDoctors /> */}
     
    
 
