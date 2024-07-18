@@ -26,7 +26,8 @@ const Navbar = () => {
                     </button>
                     <div className=' '>
                     <Link href="/" className="text-[#56BFDD]  ">
-                        <Image src={logo} width={110} alt='img' />
+                        {/* <Image src={logo} width={110} alt='img' /> */}
+                        <h1 className='font-bold text-3xl border-b'>Hanna</h1>
                     </Link>
                     </div>
                 </div>

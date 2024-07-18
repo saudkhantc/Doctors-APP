@@ -9,7 +9,7 @@ import img3 from "../../../assets/images/shamel-logo.webp"
 import CustomButton from "../customButton/CustomBotton";
 import img4 from "../../../assets/images/pharm.png";
 import MultiCarousel from "../multiCarousel/MultiCarousel";
-import { FaHeadphones, FaSearch,FaPhoneAlt } from "react-icons/fa";
+import { FaHeadphones, FaSearch, FaPhoneAlt } from "react-icons/fa";
 
 const BetterHealth = () => {
     const [dropdowns, setDropdowns] = useState([false, false, false, false]);
@@ -22,7 +22,7 @@ const BetterHealth = () => {
         setDropdowns(dropdowns.map((dropdown, i) => i === index ? !dropdown : dropdown));
     };
     const toggleSearchDropdown = (e) => {
-        e.stopPropagation(); 
+        e.stopPropagation();
         setSearchDropdownOpen(!searchDropdownOpen);
     };
 
@@ -38,17 +38,18 @@ const BetterHealth = () => {
         const newSelectedOptions = [...selectedOptions];
         newSelectedOptions[index] = option;
         setSelectedOptions(newSelectedOptions);
-        toggleDropdown(index); 
+        toggleDropdown(index);
     };
     return (
         <>
-          <div className="relative md:h-[100vh] h-auto bg-cover bg-center" style={{ backgroundImage: `url(${img2.src})` }}>
+           {/* <div className="relative md:h-[100vh] h-auto bg-cover bg-center" style={{ backgroundImage: `url(${img2.src})` }}>  */}
+              <div className="relative md:h-[100vh] h-auto bg-cover bg-center bg-[#0F76C4]">
                 <div className="flex flex-col md:p-20 p-8">
-                    <h1 className="text-gray-800 md:text-5xl text-3xl font-bold">Better Healthcare for a Better Life</h1>
+                    <h1 className="text-white md:text-5xl text-3xl font-bold">Better Healthcare for a Better Life</h1>
                     <div className="flex md:flex-row flex-col md:gap-4 gap-2 items-center">
-                        <p className="text-gray-700 text-3xl">Book online or call </p>
+                        <p className="text-white text-3xl">Book online or call </p>
                         <span> <FaPhoneAlt size={20} color="red" /></span>
-                        <span className="text-gray-700 text-3xl">16676</span>
+                        <span className="text-white text-3xl">16676</span>
                     </div>
                 </div>
 
@@ -126,7 +127,7 @@ const BetterHealth = () => {
                     </div>
                 </div>
             </div>
-        {/* <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${img2.src})` }}>
+            {/* <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${img2.src})` }}>
         <div className="flex flex-col p-20">
         <h1 className="text-gray-800 text-5xl font-bold">Better Healthcare for a Better Life</h1>
         <div className="flex gap-4 items-center">
@@ -222,7 +223,7 @@ const BetterHealth = () => {
         </div> */}
 
 
-        {/* <div className="p-20">
+            {/* <div className="p-20">
         <h1 className="text-4xl font-bold">New services for better healthcare</h1>
         <div className="flex flex-col mt-10 gap-6">
         <div className="flex justify-between bg-[#0070CD] p-4 rounded-lg items-center ">
@@ -274,7 +275,7 @@ const BetterHealth = () => {
         <h1 className="text-3xl font-bold">Choose from top offers</h1>
         {/* <MultiCarousel /> */}
 
-        {/* </div> */} 
+            {/* </div> */}
         </>
     );
 };
