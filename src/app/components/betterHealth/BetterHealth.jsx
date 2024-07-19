@@ -56,9 +56,9 @@ const BetterHealth=()=>{
 
          </div>
 
-         <div>
+         {/* <div>
             <Image src={img2} className="md:w-full h-48"/>
-         </div>
+         </div> */}
 
         </>
     )
