@@ -1,63 +1,134 @@
+// import React from "react";
+// import Image from "next/image";
+// import specialities01 from "../../../assets/images/specialities01.png";
+// import specialities02 from "../../../assets/images/specialities02.png";
+// import specialities03 from "../../../assets/images/specialities03.png";
+// import specialities04 from "../../../assets/images/specialities04.png";
+// import specialities05 from "../../../assets/images/specialities05.png";
+// import Link from "next/link";
+// import { MdArrowForwardIos } from "react-icons/md";
 
-// border-4 border-red-500
+// const PopularSpecial = () => {
+//   return (
+//     <>
+//       <div className="bg-white">
+//         <div className="w-[90%] mx-auto pt-10 p-2">
+//           <div>
+//             <h2 className="font-semibold text-3xl">Popular Specialities</h2>
+//           </div>
+//           <div className=" md:flex gap-3 pt-10  ">
+//             <div className="md:w-[20%] mt-3 md:mt-0 md:p-0 p-3   shadow-xl flex flex-col justify-center items-center ">
+//               <Image src={specialities01} />
+//               <p className="text-center pt-3" style={{ color: "#848484" }}>
+//                 Neurology
+//               </p>
+//             </div>
+//             <div className="md:w-[20%] mt-3 md:mt-0 md:p-0 p-3   shadow-xl flex flex-col justify-center items-center ">
+//               <Image src={specialities02} />
+
+//               <p className="text-center pt-3" style={{ color: "#848484" }}>
+//                 Urology
+//               </p>
+//             </div>
+//             <div className="md:w-[20%] mt-3 md:mt-0 md:p-0 p-3 md:h-[200px]  shadow-xl flex flex-col justify-center items-center ">
+//               <Image src={specialities03} />
+
+//               <p className="text-center pt-3" style={{ color: "#848484" }}>
+//                 Arthopedic
+//               </p>
+//             </div>
+//             <div className="md:w-[20%] mt-3 md:mt-0 md:p-0 p-3   shadow-xl flex flex-col justify-center items-center ">
+//               <Image src={specialities04} />
+
+//               <p className="text-center pt-3" style={{ color: "#848484" }}>
+//                 Cardiologist
+//               </p>
+//             </div>
+//             <div className="md:w-[20%] mt-3 md:mt-0 md:p-0 p-3   shadow-xl flex flex-col justify-center items-center ">
+//               <Image src={specialities05} />
+
+//               <p className="text-center pt-3" style={{ color: "#848484" }}>
+//                 Dentist
+//               </p>
+//             </div>
+//             <div className="md:w-[20%]  mt-3 md:mt-0 md:p-0 p-3 shadow-xl flex flex-col justify-center items-center ">
+//               <Image src={specialities01} />
+
+//               <p className="text-center pt-3" style={{ color: "#848484" }}>
+//                 Neurology
+//               </p>
+//             </div>
+//           </div>
+//           <div className=" mt-5 md:w-[90%]">
+//             <Link href="/">
+//             <div className="flex items-center justify-center gap-4" >
+//               <h2 className="text-4xl">View All</h2>
+//               <MdArrowForwardIos className="text-4xl"/>
+//             </div>
+//             </Link>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default PopularSpecial;
 import React from "react";
-import { TbDental } from "react-icons/tb";
-import { FiGitBranch } from "react-icons/fi";
-import { FaRegFaceGrinTears } from "react-icons/fa6";
-import { SlArrowRight } from "react-icons/sl";
-import { GiPulleyHook } from "react-icons/gi";
-import { TbVirusSearch } from "react-icons/tb";
+import Image from "next/image";
+import specialities01 from "../../../assets/images/specialities01.png";
+import specialities02 from "../../../assets/images/specialities02.png";
+import specialities03 from "../../../assets/images/specialities03.png";
+import specialities04 from "../../../assets/images/specialities04.png";
+import specialities05 from "../../../assets/images/specialities05.png";
+import Link from "next/link";
+import { MdArrowForwardIos } from "react-icons/md";
 
 const PopularSpecial = () => {
   return (
-    <div className="bg-white">
-      <div className="w-[90%] mx-auto pt-10">
-        <div>
-          <h2 className="font-semibold text-2xl md:text-3xl">Popular Specialities</h2>
-          <p className="pt-5 text-base md:text-lg">
-            Find your doctor through our wide directory of Specialities
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pt-10">
-          <div className="p-10 items-center shadow-xl flex flex-col justify-center">
-            <FiGitBranch className="text-5xl text-blue-500" />
-            <p className="text-xl md:text-2xl pt-5" style={{ color: "#848484" }}>
-              GP
-            </p>
+    <>
+      <div className="bg-white">
+        <div className="w-[90%] mx-auto pt-10 p-2">
+          <div>
+            <h2 className="font-semibold text-3xl">Popular Specialities</h2>
           </div>
-          <div className="p-10 items-center shadow-xl flex flex-col justify-center">
-            <FaRegFaceGrinTears className="text-5xl text-blue-500" />
-            <p className="text-xl md:text-2xl pt-5" style={{ color: "#848484" }}>
-              Pediatrician
-            </p>
+          <div className="grid grid-cols-2  md:gap-0 gap-4  md:grid-cols-3 lg:grid-cols-6 pt-10 ">
+            <div className="flex flex-col md:mt-0 mt-4  justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
+              <Image src={specialities01} className="rounded-full" />
+              <p className="text-center pt-3 text-gray-500">Neurology</p>
+            </div>
+            <div className="flex flex-col md:mt-0 mt-4 justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
+              <Image src={specialities02} className="rounded-full" />
+              <p className="text-center pt-3 text-gray-500">Urology</p>
+            </div>
+            <div className="flex flex-col  md:mt-0 mt-4  justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
+              <Image src={specialities03} className="rounded-full" />
+              <p className="text-center pt-3 text-gray-500">Orthopedic</p>
+            </div>
+            <div className="flex flex-col  md:mt-0 mt-4  justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
+              <Image src={specialities04} className="rounded-full" />
+              <p className="text-center pt-3 text-gray-500">Cardiologist</p>
+            </div>
+            <div className="flex flex-col  md:mt-0 mt-4  justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
+              <Image src={specialities05} className="rounded-full" />
+              <p className="text-center pt-3 text-gray-500">Dentist</p>
+            </div>
+            <div className="flex flex-col  md:mt-0 mt-4  justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
+              <Image src={specialities01} className="rounded-full" />
+              <p className="text-center pt-3 text-gray-500">Neurology</p>
+            </div>
           </div>
-          <div className="p-10 items-center shadow-xl flex flex-col justify-center">
-            <TbDental className="text-5xl text-blue-500" />
-            <p className="text-xl md:text-2xl pt-5" style={{ color: "#848484" }}>
-              Dentist
-            </p>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pt-10">
-          <div className="p-10 items-center shadow-xl flex flex-col justify-center">
-            <GiPulleyHook className="text-5xl text-blue-500" />
-            <p className="text-xl md:text-2xl pt-5" style={{ color: "#848484" }}>
-              Gynaecologist
-            </p>
-          </div>
-          <div className="p-10 items-center shadow-xl flex flex-col justify-center">
-            <TbVirusSearch className="text-5xl text-blue-500" />
-            <p className="text-xl md:text-2xl pt-5" style={{ color: "#848484" }}>
-              Dermatologist
-            </p>
-          </div>
-          <div className="p-10 items-center flex flex-col justify-center">
-            <SlArrowRight className="text-5xl text-blue-500" />
-            <p className="mt-5 text-blue-500 text-xl md:text-2xl">View More</p>
+          <div className="mt-5 flex justify-center">
+            <Link href="/">
+              <div className="flex items-center gap-4">
+                <h2 className="text-4xl">View All</h2>
+                <MdArrowForwardIos className="text-4xl" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
