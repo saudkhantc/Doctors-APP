@@ -12,7 +12,7 @@ const DoctorList = () => {
   return (
     <>
       <div className="bg-white">
-        <div className="w-[90%] mx-auto md:pt-20 pt-10 p-2 md:ps-10">
+        <div className="w-[90%] mx-auto md:p-20 pt-10 p-2 md:ps-10">
           <div>
             <div>
               <h1 className="text-4xl font-semibold">Feature Doctors</h1>

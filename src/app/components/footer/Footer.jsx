@@ -77,12 +77,12 @@ import img6 from "../../../assets/images/iso-ias.png";
 const Footer = () => {
   return (
     <>
-    <div className="mt-10">
+    <div className="">
 
    
-      <div className="bg-white border border-t-gray-200 border-b-gray-200 p-8 lg:p-20 ">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="bg-white border border-t-gray-200 border-b-gray-200  p-20 ">
+        <div className="container ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
             <div className="mb-6 lg:mb-0">
            <h2 className="text-5xl text-[#57C0DE] font-semibold">Henaa</h2>
             </div>

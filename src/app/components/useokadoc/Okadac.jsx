@@ -10,7 +10,7 @@ import btnappstore from "../../../assets/images/btnappstore.svg";
 const Okadac = () => {
   return (
     <>
-      <div className="bg-[#E5F2FA] md:p-20 pt-5 ">
+      <div className="bg-[#E5F2FA] md:p-20  ">
         <div className="flex justify-center">
           <p className="md:text-4xl text-[#2A7798] font-semibold">Why use Henaa</p>
         </div>
