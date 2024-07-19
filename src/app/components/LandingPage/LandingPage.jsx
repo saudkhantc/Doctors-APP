@@ -71,7 +71,7 @@ const LandingPage = () => {
         </div>
         <div className="md:flex">
           <div className="md:ps-10 mt-20 flex bg-[#007ACC] md:w-[360px] md:gap-10 p-5 rounded-lg md:ms-10">
-            <div className="cursor-pointer "  onClick={() =>router.push("/pages/bookDoctor")}>
+            <div className="cursor-pointer " onClick={() => router.push("/pages/bookDoctor")}>
               <h1 className="text-white font-bold">At Home Nurses & Doctors</h1>
               <div className="flex items-center">
                 <p className="text-white ">Explore Option</p>
@@ -105,7 +105,7 @@ const LandingPage = () => {
               <Image src={pcrtest} width={60} alt="img" />
             </div>
           </div>
-         
+
         </div>
       </div>
     </>

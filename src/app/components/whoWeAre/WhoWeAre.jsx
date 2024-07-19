@@ -12,12 +12,12 @@ const WhoWeAre=()=>{
         <>
         <div className="md:p-20 p-10 bg-white ">
         <div className="flex md:flex-row flex-col md:gap-10 gap-5 items-center justify-center">
-        <div className="dv1 w-[40vw] flex flex-col">
+        <div className="dv1 w-[40vw] flex flex-col ">
         <div>
         <Image src={img1} />
         </div>
         
-        <div className="flex md:flex-row flex-col  gap-4 shadow-xl p-4 rounded-full relative md:bottom-28 bottom-0  bg-white md:w-[350px] w-auto md:left-24 left-0">
+        <div className="flex md:flex-row flex-col  gap-4 shadow-xl p-4 rounded-full relative md:bottom-28 bottom-0  bg-white md:w-[350px] w-full md:left-24 left-0">
         <div className=" bg-[#1E5D8A] w-[50px] h-[50px] rounded-full items-center justify-center flex  ">
         <FaHeadphones color="white" size={20} />
         </div>
@@ -30,7 +30,7 @@ const WhoWeAre=()=>{
 
         </div>
         </div>
-<div className="flex flex-col w-[60vw] gap-2">
+<div className="flex flex-col w-[60vw] gap-2 items-center justify-center">
         <div className="dv2 flex flex-col gap-3">
         <h1 className="text-4xl font-semibold">Who <span className="text-4xl font-semibold text-[#1E5D8A]">We Are</span>  </h1>
         <p className="text-gray-500">The Great Place Of Eyecare Hospital Center</p>
