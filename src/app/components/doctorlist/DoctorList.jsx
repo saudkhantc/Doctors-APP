@@ -69,8 +69,10 @@ const DoctorList = () => {
 
   return (
     <div className="bg-white pt-20">
+   
       <div className="md:w-[90%] mx-auto">
-        <div className="flex flex-wrap gap-4 justify-center">
+      <h1 className="text-3xl font-semibold">Suggested Doctors</h1>
+        <div className="flex flex-wrap gap-4 justify-center mt-10">
           {doctorCard}
           {doctorCard}
           {doctorCard}
