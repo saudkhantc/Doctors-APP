@@ -58,7 +58,7 @@ const DoctorList = () => {
           </button>
         </div>
         <div className="md:w-[60%]">
-          <button className="relative bg-green-600 w-full rounded-lg p-3 mt-10 text-white flex items-center justify-center gap-2">
+          <button className="relative bg-[#52C4D8] w-full rounded-lg p-3 mt-10 text-white flex items-center justify-center gap-2">
             <LiaBookSolid className="text-2xl" />
             Book Now
           </button>
@@ -68,9 +68,11 @@ const DoctorList = () => {
   );
 
   return (
-    <div className="bg-white pt-20">
+    <div className="bg-white p-10">
+   
       <div className="md:w-[90%] mx-auto">
-        <div className="flex flex-wrap gap-4 justify-center">
+      <h1 className="text-3xl font-semibold">Suggested Doctors</h1>
+        <div className="flex flex-wrap gap-4 justify-center mt-10">
           {doctorCard}
           {doctorCard}
           {doctorCard}

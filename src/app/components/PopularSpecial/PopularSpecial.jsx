@@ -88,7 +88,7 @@ const PopularSpecial = () => {
   return (
     <>
       <div className="bg-white">
-        <div className="w-[90%] mx-auto pt-10 p-2">
+        <div className="w-[90%] mx-auto p-10">
           <div>
             <h2 className="font-semibold text-3xl">Popular Specialities</h2>
           </div>
@@ -118,7 +118,7 @@ const PopularSpecial = () => {
               <p className="text-center pt-3 text-gray-500">Neurology</p>
             </div>
           </div>
-          <div className="mt-5 flex justify-center">
+          <div className="mt-20 flex justify-center">
             <Link href="/">
               <div className="flex items-center gap-4">
                 <h2 className="text-4xl">View All</h2>

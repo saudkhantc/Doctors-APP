@@ -12,7 +12,7 @@ const Okadac = () => {
     <>
       <div className="bg-[#E5F2FA] md:p-20 pt-5 ">
         <div className="flex justify-center">
-          <p className="md:text-4xl ">Why use Hanaa</p>
+          <p className="md:text-4xl text-[#2A7798] font-semibold">Why use Hanaa</p>
         </div>
         <div className="md:flex md:gap-16 md:mt-12">
           <div className="md:w-[510px] md:mt-0 mt-10 md:p-0 p-4">
@@ -24,8 +24,8 @@ const Okadac = () => {
                 Book Instantly
               </p>
             </div>
-            <div>
-              <p className="">
+            <div >
+              <p className="text-center">
                 View your doctor’s real-time availability and select a time that
                 works for you.
               </p>
@@ -35,13 +35,13 @@ const Okadac = () => {
             <div className="bg-white w-[100px] rounded-full h-[100px] flex items-center mx-auto  ">
               <Image src={calendar} className=" ms-6"  alt="img" />
             </div>
-            <div className="">
+            <div className="text-center">
               <p className="font-bold mt-3 text-xl text-center">
                 Change Anytime
               </p>
             </div>
             <div>
-              <p className="">
+              <p className="text-center">
                 Reschedule or cancel your appointments, without making a phone
                 call.
               </p>
@@ -57,7 +57,7 @@ const Okadac = () => {
               </p>
             </div>
             <div>
-              <p className="">
+              <p className="text-center">
                 Booking your appointment with Okadoc comes with no additional
                 charges.
               </p>
@@ -65,28 +65,7 @@ const Okadac = () => {
           </div>
         </div>
       </div>
-      <div className=" ">
-        <div className="md:flex items-center bg-white md:pt-20">
-          <div className="flex justify-center">
-            <Image src={phonedemo} className="md:w-[500px]"  alt="img" />
-          </div>
-          <div>
-            <h2 className="md:text-4xl text-2xl md:ps-2 font-semibold md:text-start text-center">
-              Get the Okadoc App
-            </h2>
-            <p className="mt-2 p-4">
-              The quickest way to book thousands of doctors, manage your
-              appointments and attend video consultations. Healthcare in your
-              pocket.
-            </p>
-            <div className="md:flex p-4 mt-5 gap-4 md:justify-start justify-center">
-              <Image src={btnappstore}  alt="img" />
-              <Image src={btngoogleplay}  alt="img" />
-              <Image src={btnappgallery}   alt="img"/>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </>
   );
 };
