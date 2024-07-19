@@ -14,7 +14,7 @@ const PopularSpecial = () => {
       <div className="bg-white ">
         <div className="w-[90%] mx-auto md:pt-20 pt-10 p-2">
           <div>
-            <h2 className="font-semibold text-3xl md:text-start text-center md:ps-10">Popular Specialities</h2>
+            <h2 className="font-semibold text-4xl md:text-start text-center md:ps-10">Popular Specialities</h2>
           </div>
           <div className="grid grid-cols-2  md:gap-0 gap-4  md:grid-cols-3 lg:grid-cols-6 md:pt-20  ">
             <div className="flex flex-col md:mt-0 mt-4  justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
@@ -42,11 +42,11 @@ const PopularSpecial = () => {
               <p className="text-center pt-3 text-gray-500">Urology</p>
             </div>
           </div>
-          <div className="md:mt-20 mt-10 flex justify-center">
+          <div className="mt-20 flex justify-center">
             <Link href="/">
               <div className="flex items-center gap-4">
-                <h2 className="text-4xl text-[#57C0DE]">View All</h2>
-                <MdArrowForwardIos className="text-4xl text-[#57C0DE]" />
+                <h2 className="text-3xl">View All</h2>
+                <MdArrowForwardIos className="text-2xl" />
               </div>
             </Link>
           </div>

@@ -12,10 +12,10 @@ const DoctorList = () => {
   return (
     <>
       <div className="bg-white">
-        <div className="w-[90%] mx-auto md:pt-20 pt-10 p-2 md:ps-10">
+        <div className="w-[90%] mx-auto md:p-20 pt-10 p-2 md:ps-10">
           <div>
             <div>
-              <h1 className="text-4xl font-bold">Feature Doctors</h1>
+              <h1 className="text-4xl font-semibold">Feature Doctors</h1>
             </div>
           </div>
           <div className="md:flex gap-4 mt-10 md:mt-20">

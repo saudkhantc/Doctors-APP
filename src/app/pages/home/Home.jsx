@@ -33,6 +33,7 @@ export default function Home() {
     <CreateAccount />
     <CollectLead />
     <MidBanner />  */}
+    <Okadac />
     <Footer />
       {/* <FilterDoctors /> */}
     

@@ -32,13 +32,13 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="p-2 md:px-3 border bg-blue-300 text-black border-b-gray-300">
+      <nav className="p-2 md:px-6 border bg-blue-300 text-black border-b-gray-300">
         <div className="md:flex justify-between items-center">
           <div className="md:flex md:justify-between items-center md:w-[75%]">
             <div>
               <Link href="/">
-                <h1 className="text-4xl font-white text-black p-3 bg-blue-500 rounded-xl md:text-start text-center">
-                  Hanaa
+                <h1 className="text-3xl font-semibold font-white  p-3 bg-blue-800 text-white rounded-xl md:text-start text-center">
+                  Henaa
                 </h1>
               </Link>
             </div>
@@ -55,19 +55,19 @@ const Navbar = () => {
                 } md:flex flex-col md:flex-row items-center gap-4`}
               >
                 <Link href="/">
-                  <h1 className="text-xl pt-2 md:pt-0">Find Doctor</h1>
+                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">Find Doctor</h1>
                 </Link>
                 <Link href="/">
-                  <h1 className="text-xl pt-2 md:pt-0">Medicines</h1>
+                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">Medicines</h1>
                 </Link>
                 <Link href="/">
-                  <h1 className="text-xl pt-2 md:pt-0">Lab Tests</h1>
+                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">Lab Tests</h1>
                 </Link>
                 <Link href="/">
-                  <h1 className="text-xl pt-2 md:pt-0">Surgeries</h1>
+                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">Surgeries</h1>
                 </Link>
                 <Link href="/">
-                  <h1 className="text-xl pt-2 md:pt-0">Diabetes</h1>
+                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">Diabetes</h1>
                 </Link>
               </div>
             </div>
@@ -114,10 +114,10 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <div className="">
+          <div className="md:flex ">
             <Link href="/">
-              <h1 className="text-2xl bg-blue-500 p-3 rounded-xl mt-4 md:mt-0 md:text-start text-center">
-                Login/Signup
+              <h1 className="text-2xl bg-blue-800 text-white p-3 px-5 font-semibold rounded-xl mt-4 md:mt-0 md:text-start text-center">
+                Login
               </h1>
             </Link>
           </div>
