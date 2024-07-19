@@ -12,7 +12,7 @@ const Okadac = () => {
     <>
       <div className="bg-[#E5F2FA] md:p-20 pt-5 ">
         <div className="flex justify-center">
-          <p className="md:text-4xl text-[#2A7798] font-semibold">Why use Hanaa</p>
+          <p className="md:text-4xl text-[#2A7798] font-semibold">Why use Henaa</p>
         </div>
         <div className="md:flex md:gap-16 md:mt-12">
           <div className="md:w-[510px] md:mt-0 mt-10 md:p-0 p-4">

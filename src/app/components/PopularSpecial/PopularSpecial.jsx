@@ -1,79 +1,3 @@
-// import React from "react";
-// import Image from "next/image";
-// import specialities01 from "../../../assets/images/specialities01.png";
-// import specialities02 from "../../../assets/images/specialities02.png";
-// import specialities03 from "../../../assets/images/specialities03.png";
-// import specialities04 from "../../../assets/images/specialities04.png";
-// import specialities05 from "../../../assets/images/specialities05.png";
-// import Link from "next/link";
-// import { MdArrowForwardIos } from "react-icons/md";
-
-// const PopularSpecial = () => {
-//   return (
-//     <>
-//       <div className="bg-white">
-//         <div className="w-[90%] mx-auto pt-10 p-2">
-//           <div>
-//             <h2 className="font-semibold text-3xl">Popular Specialities</h2>
-//           </div>
-//           <div className=" md:flex gap-3 pt-10  ">
-//             <div className="md:w-[20%] mt-3 md:mt-0 md:p-0 p-3   shadow-xl flex flex-col justify-center items-center ">
-//               <Image src={specialities01} />
-//               <p className="text-center pt-3" style={{ color: "#848484" }}>
-//                 Neurology
-//               </p>
-//             </div>
-//             <div className="md:w-[20%] mt-3 md:mt-0 md:p-0 p-3   shadow-xl flex flex-col justify-center items-center ">
-//               <Image src={specialities02} />
-
-//               <p className="text-center pt-3" style={{ color: "#848484" }}>
-//                 Urology
-//               </p>
-//             </div>
-//             <div className="md:w-[20%] mt-3 md:mt-0 md:p-0 p-3 md:h-[200px]  shadow-xl flex flex-col justify-center items-center ">
-//               <Image src={specialities03} />
-
-//               <p className="text-center pt-3" style={{ color: "#848484" }}>
-//                 Arthopedic
-//               </p>
-//             </div>
-//             <div className="md:w-[20%] mt-3 md:mt-0 md:p-0 p-3   shadow-xl flex flex-col justify-center items-center ">
-//               <Image src={specialities04} />
-
-//               <p className="text-center pt-3" style={{ color: "#848484" }}>
-//                 Cardiologist
-//               </p>
-//             </div>
-//             <div className="md:w-[20%] mt-3 md:mt-0 md:p-0 p-3   shadow-xl flex flex-col justify-center items-center ">
-//               <Image src={specialities05} />
-
-//               <p className="text-center pt-3" style={{ color: "#848484" }}>
-//                 Dentist
-//               </p>
-//             </div>
-//             <div className="md:w-[20%]  mt-3 md:mt-0 md:p-0 p-3 shadow-xl flex flex-col justify-center items-center ">
-//               <Image src={specialities01} />
-
-//               <p className="text-center pt-3" style={{ color: "#848484" }}>
-//                 Neurology
-//               </p>
-//             </div>
-//           </div>
-//           <div className=" mt-5 md:w-[90%]">
-//             <Link href="/">
-//             <div className="flex items-center justify-center gap-4" >
-//               <h2 className="text-4xl">View All</h2>
-//               <MdArrowForwardIos className="text-4xl"/>
-//             </div>
-//             </Link>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default PopularSpecial;
 import React from "react";
 import Image from "next/image";
 import specialities01 from "../../../assets/images/specialities01.png";
@@ -87,19 +11,19 @@ import { MdArrowForwardIos } from "react-icons/md";
 const PopularSpecial = () => {
   return (
     <>
-      <div className="bg-white">
-        <div className="w-[90%] mx-auto p-10">
+      <div className="bg-white ">
+        <div className="w-[90%] mx-auto md:pt-20 pt-10 p-2">
           <div>
-            <h2 className="font-semibold text-3xl">Popular Specialities</h2>
+            <h2 className="font-semibold text-4xl md:text-start text-center md:ps-10">Popular Specialities</h2>
           </div>
-          <div className="grid grid-cols-2  md:gap-0 gap-4  md:grid-cols-3 lg:grid-cols-6 pt-10 ">
+          <div className="grid grid-cols-2  md:gap-0 gap-4  md:grid-cols-3 lg:grid-cols-6 md:pt-20  ">
             <div className="flex flex-col md:mt-0 mt-4  justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
               <Image src={specialities01} className="rounded-full" />
-              <p className="text-center pt-3 text-gray-500">Neurology</p>
+              <p className="text-center pt-3 text-gray-500">Urology</p>
             </div>
             <div className="flex flex-col md:mt-0 mt-4 justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
               <Image src={specialities02} className="rounded-full" />
-              <p className="text-center pt-3 text-gray-500">Urology</p>
+              <p className="text-center pt-3 text-gray-500"> Neurology</p>
             </div>
             <div className="flex flex-col  md:mt-0 mt-4  justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
               <Image src={specialities03} className="rounded-full" />
@@ -115,7 +39,7 @@ const PopularSpecial = () => {
             </div>
             <div className="flex flex-col  md:mt-0 mt-4  justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
               <Image src={specialities01} className="rounded-full" />
-              <p className="text-center pt-3 text-gray-500">Neurology</p>
+              <p className="text-center pt-3 text-gray-500">Urology</p>
             </div>
           </div>
           <div className="mt-20 flex justify-center">

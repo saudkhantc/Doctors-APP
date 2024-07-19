@@ -156,8 +156,8 @@ const Navbar = () => {
           <div className="md:flex md:justify-between items-center md:w-[75%]">
             <div>
               <Link href="/">
-                <h1 className="text-3xl font-semibold font-white text-black p-3 bg-blue-500 rounded-xl md:text-start text-center">
-                  Hanaa
+                <h1 className="text-3xl font-semibold font-white  p-3 bg-blue-800 text-white rounded-xl md:text-start text-center">
+                  Henaa
                 </h1>
               </Link>
             </div>
@@ -235,8 +235,8 @@ const Navbar = () => {
           </div>
           <div className="md:flex ">
             <Link href="/">
-              <h1 className="text-2xl bg-blue-500 p-3 rounded-xl mt-4 md:mt-0 md:text-start text-center">
-                Login/Signup
+              <h1 className="text-2xl bg-blue-800 text-white p-3 px-5 font-semibold rounded-xl mt-4 md:mt-0 md:text-start text-center">
+                Login
               </h1>
             </Link>
           </div>
