@@ -27,7 +27,7 @@ const Navbar = () => {
   const languages = [
     { code: "US", language: "English" },
     { code: "SA", language: "العربية" },
-    { code: "IQ", language: "Kurdî" },
+    { code: "IQ", language: "کوردی" },
   ];
 
   return (
