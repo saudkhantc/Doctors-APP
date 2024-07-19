@@ -121,8 +121,8 @@ const PopularSpecial = () => {
           <div className="mt-20 flex justify-center">
             <Link href="/">
               <div className="flex items-center gap-4">
-                <h2 className="text-4xl">View All</h2>
-                <MdArrowForwardIos className="text-4xl" />
+                <h2 className="text-3xl">View All</h2>
+                <MdArrowForwardIos className="text-2xl" />
               </div>
             </Link>
           </div>

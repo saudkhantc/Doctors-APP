@@ -233,7 +233,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <div className="">
+          <div className="md:flex ">
             <Link href="/">
               <h1 className="text-2xl bg-blue-500 p-3 rounded-xl mt-4 md:mt-0 md:text-start text-center">
                 Login/Signup

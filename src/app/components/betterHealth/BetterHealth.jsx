@@ -7,10 +7,10 @@ import { CiSearch } from "react-icons/ci";
 const BetterHealth=()=>{
     return(
         <>
-         <div className="relative  bg-[#F0F7FC] pb-20 h-screen  flex  items-center  justify-center" >
-         <div className="flex flex-col gap-6">
+         <div className="relative  bg-[#F0F7FC]   h-screen  flex  items-center justify-center" >
+         <div className="flex flex-col gap-10 ">
          <div className="dev1 flex flex-col gap-4 items-center">
-         <h1 className="text-5xl text-[#2A7798] font-semibold">Search Doctor, Make an Appointment</h1>
+         <h1 className="md:text-5xl text-3xl text-[#2A7798] font-semibold">Search Doctor, Make an Appointment</h1>
          <p className="text-[#2A7798] text-xl ">Discover the best doctors, clinic & hospital the city nearist to you.</p>
          </div>
 
