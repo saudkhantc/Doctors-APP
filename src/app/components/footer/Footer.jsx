@@ -15,10 +15,10 @@ const Footer = () => {
           <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="mb-6 lg:mb-0">
-                <h2 className="text-5xl text-[#57C0DE] font-semibold">Henaa</h2>
+                <h2 className="text-5xl text-[#57C0DE] font-semibold">Hanaa</h2>
               </div>
               <div className="mb-6 lg:mb-0">
-                <h3 className="font-semibold text-2xl mb-6 ">About Henaa</h3>
+                <h3 className="font-semibold text-2xl mb-6 ">About Hanaa</h3>
                 <ul>
                   <li className="mb-4">
                     <Link
@@ -33,7 +33,7 @@ const Footer = () => {
                       href="/link7"
                       className="text-[#317ACC] hover:underline text-lg"
                     >
-                      Henaa for Doctors
+                      Hanaa for Doctors
                     </Link>
                   </li>
                   <li className="mb-4">
@@ -93,7 +93,7 @@ const Footer = () => {
 
         <div className="flex md:flex-row flex-col justify-between px-20 py-10">
           <div>
-            <span>© Copyright 2024 Henaa Technologies FZ-LLC</span>
+            <span>© Copyright 2024 Hanaa Technologies FZ-LLC</span>
           </div>
           <div className="flex md:flex-row flex-col md:gap-10 gap-4">
             <Link

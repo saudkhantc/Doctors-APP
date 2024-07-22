@@ -12,7 +12,7 @@ const Okadac = () => {
     <>
       <div className="bg-[#E5F2FA] md:p-20  ">
         <div className="flex justify-center">
-          <p className="md:text-4xl text-[#2A7798] font-semibold">Why use Henaa</p>
+          <p className="md:text-4xl text-[#2A7798] font-semibold">Why use Hanaa</p>
         </div>
         <div className="md:flex md:gap-16 md:mt-12">
           <div className="md:w-[510px] md:mt-0 mt-10 md:p-0 p-4">
@@ -58,7 +58,7 @@ const Okadac = () => {
             </div>
             <div>
               <p className="text-center">
-                Booking your appointment with Okadoc comes with no additional
+                Booking your appointment with Hanaa comes with no additional
                 charges.
               </p>
             </div>
