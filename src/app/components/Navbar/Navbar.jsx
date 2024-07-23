@@ -1,126 +1,9 @@
-// import React, { useState } from "react";
-// import Link from "next/link";
-// import { FlagIcon } from "react-flag-kit";
-
-// const Navbar = () => {
-//   const [menuOpen, setMenuOpen] = useState(false);
-
-//   const toggleMenu = () => {
-//     setMenuOpen(!menuOpen);
-//   };
-
-//   return (
-//     <div>
-//       <nav className="p-2 md:px-3 border bg-blue-300 text-black border-b-gray-300">
-//         <div className="md:flex justify-between items-center">
-//           <div className="md:flex md:justify-between items-center md:w-[75%]">
-//             <div>
-//               <Link href="/">
-//                 <h1 className="text-4xl font-white text-black p-3 bg-blue-500 rounded-xl md:text-start text-center">
-//                   Hanaa
-//                 </h1>
-//               </Link>
-//             </div>
-//             <div>
-//               <button
-//                 onClick={toggleMenu}
-//                 className="md:hidden text-xl md:text-2xl p-2 rounded"
-//               >
-//                 &#9776;
-//               </button>
-//               <div
-//                 className={`${
-//                   menuOpen ? "block" : "hidden"
-//                 } md:flex flex-col md:flex-row items-center gap-4`}
-//               >
-//                 <Link href="/">
-//                   <h1 className="text-xl pt-2 md:pt-0">Find Doctor</h1>
-//                 </Link>
-//                 <Link href="/">
-//                   <h1 className="text-xl pt-2 md:pt-0">Medicines</h1>
-//                 </Link>
-//                 <Link href="/">
-//                   <h1 className="text-xl pt-2 md:pt-0">Lab Tests</h1>
-//                 </Link>
-//                 <Link href="/">
-//                   <h1 className="text-xl pt-2 md:pt-0">Surgeries</h1>
-//                 </Link>
-//                 <Link href="/">
-//                   <h1 className="text-xl pt-2 md:pt-0">Diabetes</h1>
-//                 </Link>
-//               </div>
-//             </div>
-//           </div>
-
-//           <div className="relative pt-2 md:pt-0 md:px-5 md:flex md:justify-end md:w-[300px]">
-//             <div className="flex items-center gap-2 focus:outline-none">
-//               <FlagIcon code="US" size={24} />
-//               <span>English</span>
-//               <svg
-//                 className="w-4 h-4"
-//                 fill="none"
-//                 stroke="currentColor"
-//                 viewBox="0 0 24 24"
-//                 xmlns="http://www.w3.org/2000/svg"
-//               >
-//                 <path
-//                   strokeLinecap="round"
-//                   strokeLinejoin="round"
-//                   strokeWidth="2"
-//                   d="M19 9l-7 7-7-7"
-//                 ></path>
-//               </svg>
-//             </div>
-//             <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg overflow-hidden z-20">
-//               <div className="py-1">
-//                 <Link
-//                   href="/"
-//                   className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-//                 >
-//                   <div className="flex items-center gap-2">
-//                     <FlagIcon code="US" size={24} />
-//                     <span>English</span>
-//                   </div>
-//                 </Link>
-//                 <Link
-//                   href="/"
-//                   className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-//                 >
-//                   <div className="flex items-center gap-2">
-//                     <FlagIcon code="SA" size={24} />
-//                     <span>العربية</span>
-//                   </div>
-//                 </Link>
-//                 <Link
-//                   href="/"
-//                   className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-//                 >
-//                   <div className="flex items-center gap-2">
-//                     <FlagIcon code="IQ" size={24} />
-//                     <span>Kurdî</span>
-//                   </div>
-//                 </Link>
-//               </div>
-//             </div>
-//           </div>
-//           <div className="">
-//             <Link href="/">
-//               <h1 className="text-2xl bg-blue-500 p-3 rounded-xl mt-4 md:mt-0 md:text-start text-center">
-//                 Login/Signup
-//               </h1>
-//             </Link>
-//           </div>
-//         </div>
-//       </nav>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
-"use client"
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import { FlagIcon } from "react-flag-kit";
+import Image from "next/image";
+import HanaaLogo from "../../../assets/images/HanaaLogo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -128,6 +11,7 @@ const Navbar = () => {
   const [selectedLanguage, setSelectedLanguage] = useState({
     code: "US",
     language: "English",
+    country: "United States",
   });
 
   const toggleMenu = () => {
@@ -138,27 +22,32 @@ const Navbar = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
-  const handleLanguageSelect = (code, language) => {
-    setSelectedLanguage({ code, language });
+  const handleLanguageSelect = (code, language, country) => {
+    setSelectedLanguage({ code, language, country });
     setDropdownOpen(false);
   };
 
   const languages = [
-    { code: "US", language: "English" },
-    { code: "SA", language: "العربية" },
-    { code: "IQ", language: "Kurdî" },
+    { code: "QA", language: "English", country: "Qatar" },
+    { code: "QA", language: "Arabic", country: "Qatar" },
+    { code: "AE", language: "English", country: "UAE" },
+    { code: "AE", language: "الإمارات العربية المتحدة", country: "العربية " },
+    { code: "IQ", language: "English", country: "Iraq" },
+    { code: "IQ", language: "Kurdi", country: "Iraq" },
   ];
 
   return (
     <div>
-      <nav className="p-2 md:px-6 border bg-blue-300 text-black border-b-gray-300">
+      <nav className="p-2 md:px-3 bg-blue-300 text-white">
         <div className="md:flex justify-between items-center">
           <div className="md:flex md:justify-between items-center md:w-[75%]">
-            <div>
+            <div className="">
               <Link href="/">
-                <h1 className="text-3xl font-semibold font-white  p-3 bg-blue-800 text-white rounded-xl md:text-start text-center">
-                  Henaa
-                </h1>
+                <Image
+                  src={HanaaLogo}
+                  alt="Logo"
+                  className="w-[200px] h-[80px] object-cover mix-blend-multiply"
+                />
               </Link>
             </div>
             <div>
@@ -174,19 +63,29 @@ const Navbar = () => {
                 } md:flex flex-col md:flex-row items-center gap-4`}
               >
                 <Link href="/">
-                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">Find Doctor</h1>
+                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">
+                    Find Doctor
+                  </h1>
                 </Link>
                 <Link href="/">
-                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">Medicines</h1>
+                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">
+                    Medicines
+                  </h1>
                 </Link>
                 <Link href="/">
-                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">Lab Tests</h1>
+                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">
+                    Lab Tests
+                  </h1>
                 </Link>
                 <Link href="/">
-                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">Surgeries</h1>
+                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">
+                    Surgeries
+                  </h1>
                 </Link>
                 <Link href="/">
-                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">Diabetes</h1>
+                  <h1 className="text-xl pt-2 md:pt-0 hover:border-b border-blue-600">
+                    Diabetes
+                  </h1>
                 </Link>
               </div>
             </div>
@@ -198,7 +97,10 @@ const Navbar = () => {
               onClick={toggleDropdown}
             >
               <FlagIcon code={selectedLanguage.code} size={24} />
-              <span>{selectedLanguage.language}</span>
+              <span className="flex justify-between w-full ">
+                <span>{selectedLanguage.country} - </span>
+                <span className="">{selectedLanguage.language}</span>
+              </span>
               <svg
                 className="w-4 h-4"
                 fill="none"
@@ -215,17 +117,30 @@ const Navbar = () => {
               </svg>
             </div>
             {dropdownOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg overflow-hidden z-20">
-                <div className="py-1">
+              <div className="absolute right-0 mt-10 md:w-[250px] md:p-3 bg-white rounded-md shadow-lg overflow-hidden z-20">
+                <div className="py-1 p-2">
+                  <span className="text-black text-[12px] flex justify-center">
+                    Select your region and language
+                  </span>
                   {languages.map((lang) => (
                     <button
-                      key={lang.code}
-                      onClick={() => handleLanguageSelect(lang.code, lang.language)}
-                      className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-200"
+                      key={lang.code + lang.language}
+                      onClick={() =>
+                        handleLanguageSelect(
+                          lang.code,
+                          lang.language,
+                          lang.country
+                        )
+                      }
+                      className="block w-full p-2 text-gray-800 hover:bg-gray-200"
                     >
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center justify-between mt-2 w-[200px] ">
                         <FlagIcon code={lang.code} size={24} />
-                        <span>{lang.language}</span>
+                        <div className="flex-1 mx-2 text-[12px] text-left">
+                          {lang.country}
+                          <span className="ps-1"> - </span>
+                          {lang.language}
+                        </div>
                       </div>
                     </button>
                   ))}
@@ -233,7 +148,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <div className="md:flex ">
+          <div className="md:flex">
             <Link href="/">
               <h1 className="text-2xl bg-blue-800 text-white p-3 px-5 font-semibold rounded-xl mt-4 md:mt-0 md:text-start text-center">
                 Login
