@@ -5,6 +5,7 @@ import { FlagIcon } from "react-flag-kit";
 import Image from "next/image";
 import HanaaLogo from "../../../assets/images/HanaaLogo.png";
 
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -28,17 +29,15 @@ const Navbar = () => {
   };
 
   const languages = [
-    { code: "QA", language: "English", country: "Qatar" },
-    { code: "QA", language: "Arabic", country: "Qatar" },
-    { code: "AE", language: "English", country: "UAE" },
-    { code: "AE", language: "الإمارات العربية المتحدة", country: "العربية " },
+   
     { code: "IQ", language: "English", country: "Iraq" },
     { code: "IQ", language: "Kurdi", country: "Iraq" },
+    { code: "IQ", language: "العربية", country: "العراق" }
   ];
 
   return (
     <div>
-      <nav className="p-2 md:px-3 bg-blue-300 text-white">
+      <nav className="p-2 md:px-3 bg-white border-b text-[#2A7798] ropa-sans-regular">
         <div className="md:flex justify-between items-center">
           <div className="md:flex md:justify-between items-center md:w-[75%]">
             <div className="">
@@ -46,7 +45,7 @@ const Navbar = () => {
                 <Image
                   src={HanaaLogo}
                   alt="Logo"
-                  className="w-[200px] h-[80px] object-cover mix-blend-multiply"
+                  className="w-[200px] h-[60px] object-cover mix-blend-multiply"
                 />
               </Link>
             </div>
@@ -150,7 +149,7 @@ const Navbar = () => {
           </div>
           <div className="md:flex">
             <Link href="/">
-              <h1 className="text-2xl bg-blue-800 text-white p-3 px-5 font-semibold rounded-xl mt-4 md:mt-0 md:text-start text-center">
+              <h1 className=" text-[#2A7798] border px-4 py-2 text-xl rounded-md  md:mt-0 md:text-start text-center">
                 Login
               </h1>
             </Link>

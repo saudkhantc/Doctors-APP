@@ -3,12 +3,22 @@ import img1 from "../../../assets/images/amb4.jpg";
 import img2 from "../../../assets/images/search-bg.png"
 import { LuMapPin } from "react-icons/lu";
 import { CiSearch } from "react-icons/ci";
+import img3 from "../../../assets/images/landingpage22.jpg"
 
 const BetterHealth=()=>{
     return(
         <>
-         <div className="relative  bg-[#F0F7FC] md:pb-20 px-10  h-screen  flex  items-center justify-center" >
-         <div className="flex flex-col gap-10 ">
+         <div className="  bg-[#F0F7FC]   h-screen  flex p-20  justify-center " 
+        style={{
+        backgroundImage: `url(${img3.src})`,
+        backgroundSize: "cover", 
+    
+      
+      
+      }}
+      
+    > 
+         <div className="flex flex-col gap-10 ropa-sans-regular ">
          <div className="dev1 flex flex-col gap-4 items-center">
          <h1 className="md:text-5xl text-3xl text-[#2A7798] font-semibold">Search Doctor, Make an Appointment</h1>
          <p className="text-[#2A7798] text-xl ">Discover the best doctors, clinic & hospital the city nearist to you.</p>
@@ -54,11 +64,16 @@ const BetterHealth=()=>{
 
          </div>
 
+      
+
+       
+         
+
          </div>
 
-         {/* <div>
-            <Image src={img2} className="md:w-full h-48"/>
-         </div> */}
+       
+
+     
 
         </>
     )
