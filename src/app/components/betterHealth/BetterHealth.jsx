@@ -8,12 +8,10 @@ import img3 from "../../../assets/images/landingpage22.jpg"
 const BetterHealth=()=>{
     return(
         <>
-         <div className="  bg-[#F0F7FC]   h-screen  flex p-20  justify-center " 
+         <div className="  bg-[#F0F7FC]   h-screen  flex md:p-20 p-5  justify-center " 
         style={{
         backgroundImage: `url(${img3.src})`,
         backgroundSize: "cover", 
-    
-      
       
       }}
       
