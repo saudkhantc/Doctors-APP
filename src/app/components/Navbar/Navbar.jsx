@@ -10,9 +10,9 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState({
-    code: "US",
+    code: "IQ",
     language: "English",
-    country: "United States",
+    country: "Iraq",
   });
 
   const toggleMenu = () => {
@@ -31,7 +31,7 @@ const Navbar = () => {
   const languages = [
    
     { code: "IQ", language: "English", country: "Iraq" },
-    { code: "IQ", language: "Kurdi", country: "Iraq" },
+    { code: "IQ", language: "كوردى", country: "عێراق" },
     { code: "IQ", language: "العربية", country: "العراق" }
   ];
 
@@ -149,7 +149,7 @@ const Navbar = () => {
           </div>
           <div className="md:flex">
             <Link href="/">
-              <h1 className=" text-[#2A7798] border px-4 py-2 text-xl rounded-md  md:mt-0 md:text-start text-center">
+              <h1 className=" text-[#2A7798] border px-4 py-1 text-xl rounded-md  md:mt-0 md:text-start text-center">
                 Login
               </h1>
             </Link>

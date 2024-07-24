@@ -4,13 +4,14 @@ import img2 from "../../../assets/images/search-bg.png"
 import { LuMapPin } from "react-icons/lu";
 import { CiSearch } from "react-icons/ci";
 import img3 from "../../../assets/images/landingpage22.jpg"
+import img4 from "../../../assets/images/DoctorsPage.jpg"
 
 const BetterHealth=()=>{
     return(
         <>
-         <div className="  bg-[#F0F7FC]   h-screen  flex md:p-20 p-5  justify-center " 
+         <div className="  bg-[#F0F7FC]   h-screen  flex md:p-40 p-5  justify-center " 
         style={{
-        backgroundImage: `url(${img3.src})`,
+        backgroundImage: `url(${img4.src})`,
         backgroundSize: "cover", 
       
       }}
@@ -24,33 +25,27 @@ const BetterHealth=()=>{
 
          <div className="dev2 flex md:flex-row flex-col  gap-2 ">
          <div className="flex flex-col gap-2">
-         <div className="flex gap-2 items-center p-3 rounded-md  bg-white border border-gray-300">
+         <div className="flex gap-2 items-center p-3 rounded-md  bg-white border border-[#2A7798]">
          <LuMapPin size={18} />
-         <input type="text" placeholder="Search Location" className="outline-none" />
+        <span className="text-[#2A7798] font-semibold px-2">City</span>
          </div>
-         <div>
-            <span className="text-gray-500 ">Based on your Location</span>
-         </div>
+        
          </div>
 
          <div className="flex flex-col gap-2">
-         <div className="flex gap-2 items-center p-3 rounded-md  bg-white  border border-gray-300">
+         <div className="flex gap-2 items-center p-3 rounded-md  bg-white  border  border-[#2A7798]">
          <CiSearch size={18} />
          <input type="text" placeholder="Find Specialities" className="outline-none" />
          </div>
-         <div>
-            <span className="text-gray-500 ">Find Specialities Options</span>
-         </div>
+      
          </div>
 
          <div className="flex flex-col gap-2">
-         <div className="flex gap-2 items-center p-3 rounded-md  bg-white  border border-gray-300 ">
+         <div className="flex gap-2 items-center p-3 rounded-md  bg-white  border  border-[#2A7798] ">
          <CiSearch size={20}/>
          <input type="text" placeholder="Search Doctors, Clinics, Hospitals, Diseases Etc" className="md:w-[400px] outline-none" />
          </div>
-         <div>
-            <span className="text-gray-500 ">Ex: Dental or Sugar Check up etc</span>
-         </div>
+       
          </div>
 
          <div className="bg-[#2A7798] flex items-center p-4 h-12 rounded-lg">
