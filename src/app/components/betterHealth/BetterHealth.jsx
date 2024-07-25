@@ -1,12 +1,21 @@
+import React, { useState } from "react";
 import Image from "next/image";
 import img1 from "../../../assets/images/amb4.jpg";
 import img2 from "../../../assets/images/search-bg.png"
 import { LuMapPin } from "react-icons/lu";
 import { CiSearch } from "react-icons/ci";
+import { FaChevronDown } from "react-icons/fa";
 import img3 from "../../../assets/images/landingpage22.jpg"
 import img4 from "../../../assets/images/shuttur1.jpg"
 
 const BetterHealth=()=>{
+    const cities = ["UAE", "Iraq", "Pakistan", "NewYork", "UK"];
+
+    const [selectedCity, setSelectedCity] = useState(""); 
+
+    const handleCityChange = (event) => {
+      setSelectedCity(event.target.value);
+    };
     return(
         <>
          <div className="  bg-white   h-screen  flex md:flex-row gap-6 flex-col p-5  " 
@@ -24,16 +33,30 @@ const BetterHealth=()=>{
          <p className="text-[#2A7798] text-xl ">Discover the best doctors, clinic & hospital the city nearist to you.</p>
          </div>
 
-         <div className="dev2 flex md:flex-row flex-col items-center justify-center gap-6 ">
+         <div className="dev2 flex md:flex-row flex-col items-center justify-center gap-4 ">
          
 
          <div className="flex items-center gap-2">
-          <LuMapPin size={18} />
-         <div className="flex gap-2 items-center p-3 rounded-md  bg-white  border  border-[#2A7798]">
-         <span>City</span>
-         </div>
-      
-         </div>
+      <LuMapPin size={18} />
+      <div className="relative flex items-center gap-2 p-3 rounded-md bg-white border border-[#2A7798]">
+        {!selectedCity }
+        <select
+          value={selectedCity}
+          onChange={handleCityChange}
+          className="appearance-none bg-white border-none outline-none text-gray-700   w-[100px] "
+        >
+          <option value="" disabled hidden>
+           City
+          </option>
+          {cities.map((city) => (
+            <option key={city} value={city}  className=" font-medium text-[#2A7798]  "> 
+              {city}
+            </option>
+          ))}
+        </select>
+        <FaChevronDown size={14} className="absolute right-3 pointer-events-none text-gray-700" />
+      </div>
+    </div>
 
          <div className="flex flex-col gap-2">
          <div className="flex gap-2 items-center p-3 rounded-md  bg-white  border  border-[#2A7798] ">
