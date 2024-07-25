@@ -39,7 +39,7 @@ const Navbar = () => {
     <div>
       <nav className="p-2 md:px-3 bg-white border-b text-[#2A7798] ropa-sans-regular">
         <div className="md:flex justify-between items-center">
-          <div className="md:flex md:justify-between items-center md:w-[75%]">
+          <div className="md:flex gap-20 items-center md:w-[75%]">
             <div className="">
               <Link href="/">
                 <Image
@@ -90,15 +90,15 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="relative pt-2 md:pt-0 md:px-5 md:flex md:justify-end md:w-[300px]">
+          <div className="relative pt-2 md:pt-0 md:px-5 md:flex md:justify-end md:w-[300px] ">
             <div
               className="flex items-center gap-2 cursor-pointer focus:outline-none"
               onClick={toggleDropdown}
             >
               <FlagIcon code={selectedLanguage.code} size={24} />
               <span className="flex justify-between w-full ">
-                <span>{selectedLanguage.country} - </span>
-                <span className="">{selectedLanguage.language}</span>
+                <span className="text-xl">{selectedLanguage.country} - </span>
+                <span className="text-lg">{selectedLanguage.language}</span>
               </span>
               <svg
                 className="w-4 h-4"
@@ -149,7 +149,7 @@ const Navbar = () => {
           </div>
           <div className="md:flex">
             <Link href="/">
-              <h1 className=" text-[#2A7798] border px-4 py-1 text-xl rounded-md  md:mt-0 md:text-start text-center">
+              <h1 className=" text-[#2A7798]  px-4 py-1 text-xl rounded-md  md:mt-0 md:text-start text-center">
                 Login
               </h1>
             </Link>
