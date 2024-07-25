@@ -1,3 +1,4 @@
+"use client";
 import React, { useState,useRef,useEffect } from "react";
 import Image from "next/image";
 import img1 from "../../../assets/images/amb4.jpg";
@@ -37,7 +38,7 @@ const BetterHealth=()=>{
       }
     };
   
-    // Add event listener for clicks outside the dropdown
+ 
     useEffect(() => {
       document.addEventListener('mousedown', handleClickOutside);
       return () => document.removeEventListener('mousedown', handleClickOutside);
@@ -67,7 +68,7 @@ const BetterHealth=()=>{
 
          <div className="relative flex items-center gap-2 p-3 rounded-md border border-[#2A7798]" ref={dropdownRef}>
       <LuMapPin size={18} />
-      <div className="relative w-[150px]">
+      <div className="relative w-[150px] ">
         <div
           className="flex items-center justify-between cursor-pointer  rounded-md"
           onClick={() => setIsOpen(!isOpen)}
@@ -81,7 +82,7 @@ const BetterHealth=()=>{
               type="text"
               value={searchTerm}
               onChange={handleSearchChange}
-              placeholder="Search..."
+              placeholder="Search cities"
               className="w-full p-2 border-b border-[#2A7798]"
             />
             <div className="max-h-60 overflow-y-auto">
