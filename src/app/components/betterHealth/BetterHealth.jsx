@@ -93,7 +93,7 @@ const BetterHealth=()=>{
       <div className="flex items-center relative   border  border-[#2A7798] ">
         <input
           type="text"
-          value={searchTerm}
+          value={selectedCity || searchTerm}
           onChange={handleSearchChange}
           placeholder="eg. al ain"
           onClick={() => setIsOpen(true)}
