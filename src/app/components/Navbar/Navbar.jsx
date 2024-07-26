@@ -37,9 +37,9 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="p-2 md:px-3 bg-white border-b text-[#2A7798] ropa-sans-regular">
+      <nav className="p-4 md:px-3 bg-white border-b text-[#2A7798] ropa-sans-regular">
         <div className="md:flex justify-between items-center">
-          <div className="md:flex gap-20 items-center md:w-[75%]">
+          <div className="md:flex gap-8 items-center md:w-[75%]">
             <div className="">
               <Link href="/">
                 <Image
@@ -49,7 +49,7 @@ const Navbar = () => {
                 />
               </Link>
             </div>
-            <div>
+            {/* <div>
               <button
                 onClick={toggleMenu}
                 className="md:hidden text-xl md:text-2xl p-2 rounded"
@@ -87,10 +87,10 @@ const Navbar = () => {
                   </h1>
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
 
-          <div className="relative pt-2 md:pt-0 md:px-5 md:flex md:justify-end md:w-[300px] ">
+          <div className="relative pt-2 md:pt-0 md:px-5 md:flex md:justify-end md:w-[250px] ">
             <div
               className="flex items-center gap-2 cursor-pointer focus:outline-none"
               onClick={toggleDropdown}
@@ -147,13 +147,13 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <div className="md:flex">
+          {/* <div className="md:flex">
             <Link href="/">
               <h1 className=" text-[#2A7798]  px-4 py-1 text-xl rounded-md  md:mt-0 md:text-start text-center">
                 Login
               </h1>
             </Link>
-          </div>
+          </div> */}
         </div>
       </nav>
     </div>
