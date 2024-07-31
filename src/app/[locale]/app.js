@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <main className="min-h-screen">
-      {/* <Home /> */}
+      <Home />
       {/* <Doctors /> */}
       <Profile />
     </main>

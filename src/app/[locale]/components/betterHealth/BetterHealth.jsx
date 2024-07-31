@@ -87,8 +87,7 @@ const BetterHealth=()=>{
          <div className="flex flex-col gap-10 ropa-sans-regular w-[60vw] z-10  md:pt-20 md:pl-14">
          <div className="dev1 flex flex-col gap-4 items-center">
          <h1 className="md:text-4xl text-3xl text-[#2A7798] font-semibold">{t('Title')}</h1>
-         <h1 className="md:text-4xl text-3xl text-[#2A7798] font-semibold">Search Doctor, Make an Appointment</h1>
-         <p className="text-[#2A7798] text-xl ">Discover the best doctors, clinic & hospital the city nearist to you.</p>
+         <p className="text-[#2A7798] text-xl ">{t('sub-title')}</p>
          </div>
 
          <div className="dev2 flex md:flex-row flex-col items-center justify-center gap-4 ">
@@ -99,7 +98,7 @@ const BetterHealth=()=>{
           type="text"
           value={selectedCity || searchTerm}
           onChange={handleSearchChange}
-          placeholder="eg. al ain"
+          placeholder={t('AlAin')}
           onClick={() => setIsOpen(true)}
           className="w-full p-4 outline-none"
         />
@@ -176,7 +175,7 @@ const BetterHealth=()=>{
          <div className="flex flex-col gap-2 w-[290px]">
          <div className="flex gap-2 items-center p-4  bg-white  border  border-[#2A7798] ">
          
-         <input type="text" placeholder="Find by speciality, doctor, clinic or hospital" className="md:w-[400px] outline-none" />
+         <input type="text" placeholder={t('FindBySpeciality')} className="md:w-[400px] outline-none" />
          </div>
        
          </div>

@@ -98,7 +98,7 @@ const Navbar = () => {
             </div> */}
           </div>
 
-          <div className="relative pt-2 md:pt-0 md:px-5 md:flex md:justify-end md:w-[250px] ">
+          {/* <div className="relative pt-2 md:pt-0 md:px-5 md:flex md:justify-end md:w-[250px] ">
             <div
               className="flex items-center gap-2 cursor-pointer focus:outline-none"
               onClick={toggleDropdown}
@@ -122,7 +122,32 @@ const Navbar = () => {
                   d="M19 9l-7 7-7-7"
                 ></path>
               </svg>
-            </div>
+            </div> */}
+            <div className="relative pt-2 md:pt-0 md:px-5 md:flex md:justify-end md:w-[250px]">
+      <div
+        className="flex items-center gap-2 cursor-pointer focus:outline-none"
+        onClick={toggleDropdown}
+      >
+        <FlagIcon code={selectedLanguage.code} size={24} />
+        <span className="flex justify-between w-full">
+          <span className="text-xl">{selectedLanguage.country} - </span>
+          <span className="text-lg">{selectedLanguage.language}</span>
+        </span>
+        <svg
+          className="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M19 9l-7 7-7-7"
+          ></path>
+        </svg>
+      </div>
             {/* {dropdownOpen && (
               <div className="absolute right-0 mt-10 md:w-[250px] md:p-3 bg-white rounded-md shadow-lg overflow-hidden z-20">
                 <div className="py-1 p-2">
@@ -154,22 +179,29 @@ const Navbar = () => {
                 </div>
               </div>
             )} */}
-            <div className="flex space-x-10">
-                    <LocalizedLink href={pathname} locale="en">
-                        🏴󠁧󠁢󠁥󠁮󠁧󠁿 English
-                    </LocalizedLink>
-                    <LocalizedLink href={pathname} locale="fr">
-                        🇫🇷 Français
-                    </LocalizedLink>
-                </div>
+
+          
+            {dropdownOpen && (
+        <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg z-10">
+          <div className="py-1">
+            <LocalizedLink href={pathname} locale="en" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+              🏴 English
+            </LocalizedLink>
+            <LocalizedLink href={pathname} locale="ar" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+              Arabic
+            </LocalizedLink>
           </div>
-          {/* <div className="md:flex">
+        </div>
+      )}
+
+          </div>
+          <div className="md:flex">
             <Link href="/">
               <h1 className=" text-[#2A7798]  px-4 py-1 text-xl rounded-md  md:mt-0 md:text-start text-center">
                 Login
               </h1>
             </Link>
-          </div> */}
+          </div>
         </div>
       </nav>
     </div>
@@ -177,3 +209,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

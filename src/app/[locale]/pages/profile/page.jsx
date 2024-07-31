@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import React from 'react'
-import img1 from "../../../assets/images/eyespecialdoc02.jpg";
-import img2 from "../../../assets/images/verify1.PNG";
-import img3 from "../../../assets/images/verify2.PNG";
-import img4 from "../../../assets/images/verify3.PNG";
-import img5 from "../../../assets/images/lisence.PNG";
-import img6 from "../../../assets/images/map.PNG";
+import img1 from "../../../../assets/images/eyespecialdoc02.jpg";
+import img2 from "../../../../assets/images/verify1.PNG";
+import img3 from "../../../../assets/images/verify2.PNG";
+import img4 from "../../../../assets/images/verify3.PNG";
+import img5 from "../../../../assets/images/lisence.PNG";
+import img6 from "../../../../assets/images/map.PNG";
 import { LuMapPin } from "react-icons/lu";
-import CustomButton from '@/app/components/customButton/CustomBotton';
+import CustomButton from '../../components/customButton/CustomBotton';
 
 
 const data = [

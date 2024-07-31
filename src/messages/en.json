@@ -1,9 +1,10 @@
 {
     "Home": {
         "Hero": {
-            "Title": "Next.js Internalization Demo",
-            "Subtitle": "This demo uses Next.js and the next-intl package to create a multi-language website. We later also explore how it works with Hygraph.",
-            "CallToAction": "Read about us"
+            "Title": "Search Doctor, Make an Appointment",
+            "sub-title": "Discover the best doctor, clinic & hospital the city nearist to you.",
+            "FindBySpeciality": "Find by speciality, doctor, clinic or hospital",
+            "AlAin": "eg Al Ain"
         }
     }
 }
