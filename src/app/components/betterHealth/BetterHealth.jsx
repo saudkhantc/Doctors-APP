@@ -97,7 +97,7 @@ const BetterHealth=()=>{
           onChange={handleSearchChange}
           placeholder="eg. al ain"
           onClick={() => setIsOpen(true)}
-          className="w-full p-4"
+          className="w-full p-4 outline-none"
         />
         <FaChevronDown
           size={14}
