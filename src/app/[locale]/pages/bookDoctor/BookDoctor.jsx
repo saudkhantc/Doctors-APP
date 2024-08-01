@@ -1,5 +1,6 @@
 import BetterHealth from "../../components/betterHealth/BetterHealth";
-import Navbar from "@/app/components/Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
+
 
 const BookDoctor=()=>{
     return(
