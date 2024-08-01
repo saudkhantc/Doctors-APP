@@ -28,16 +28,16 @@ export default function Home() {
     <BetterHealth />
     <PopularSpecial />
   
-    {/* 
-    <DoctorList /> */}
-    {/* <WhoWeAre />
-    <MidBanner2 />
+    
+    {/* <DoctorList /> 
+    <WhoWeAre /> */}
+    {/* <MidBanner2 /> */}
     <CreateAccount />
     <CollectLead />
-    <MidBanner />  */}
-    {/* <Okadac />
-    <Footer /> */}
-      {/* <FilterDoctors /> */}
+    <MidBanner /> 
+    <Okadac />
+    <Footer />
+      {/* <FilterDoctors />
     
    
 
