@@ -4,7 +4,11 @@
             "Title": "Search Doctor, Make an Appointment",
             "sub-title": "Discover the best doctor, clinic & hospital the city nearist to you.",
             "FindBySpeciality": "Find by speciality, doctor, clinic or hospital",
-            "AlAin": "eg Al Ain"
+            "AlAin": "eg Al Ain",
+            "Login":"Log in",
+            "Erbil": "Erbil",
+        "Duhok": "Duhok",
+        "Silemani": "Silemani"
         }
     }
 }

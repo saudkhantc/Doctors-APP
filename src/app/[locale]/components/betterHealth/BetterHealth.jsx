@@ -13,7 +13,10 @@ import { useTranslations } from 'next-intl';
 
 
 const BetterHealth=()=>{
-    const cities = ["Dubai", "Abu Dhabi", "Sharjah", "Al Ain", "Ajman","Ras Al-Khaimah","Fujairah"];
+  const t = useTranslations('Home.Hero');
+    const cities = [t('Erbil'),
+      t('Duhok'),
+      t('Silemani')];
     // const [selectedCity, setSelectedCity] = useState('');
     // const [searchTerm, setSearchTerm] = useState('');
     // const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +52,7 @@ const BetterHealth=()=>{
     const [selectedCity, setSelectedCity] = useState('');
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredCities, setFilteredCities] = useState(cities);
-    const t = useTranslations('Home.Hero');
+    
 
 
     // useEffect(() => {

@@ -8,5 +8,5 @@ import createMiddleware from 'next-intl/middleware';
     });
     
     export const config = {
-        matcher: ['/', '/(ar|es|en)/:path*'],
+        matcher: ['/', '/(ar|ku|en)/:path*'],
     };

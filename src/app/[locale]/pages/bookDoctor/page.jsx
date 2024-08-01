@@ -2,7 +2,7 @@ import React from 'react'
 import BookDoctors from './BookDoctor'
 
 const page = () => {
-  return <BookDoctors/>
+  return <p>welcome to book docters</p>
 }
 
 export default page

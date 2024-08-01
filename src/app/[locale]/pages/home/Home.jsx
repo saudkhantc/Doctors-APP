@@ -26,7 +26,9 @@ export default function Home() {
     <main className="min-h-screen  ">   
     <Navbar />
     <BetterHealth />
-    {/* <PopularSpecial /> 
+    <PopularSpecial />
+  
+    {/* 
     <DoctorList /> */}
     {/* <WhoWeAre />
     <MidBanner2 />

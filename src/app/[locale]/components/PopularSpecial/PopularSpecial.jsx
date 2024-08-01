@@ -1,26 +1,40 @@
+'use client';
 import React from "react";
 import Image from "next/image";
-import specialities01 from "@/assets/images/specialities01.png";
-import specialities02 from "@/assets/images/specialities02.png";
-import specialities03 from "@/assets/images/specialities03.png";
-import specialities04 from "@/assets/images/specialities04.png";
-import specialities05 from "@/assets/images/specialities05.png";
-import Link from "next/link";
+import specialities01 from "@/assets/images/ps1.PNG";
+import specialities02 from "@/assets/images/ps2.PNG";
+import specialities03 from "@/assets/images/ps3.PNG";
+import specialities04 from "@/assets/images/ps4.PNG";
+import specialities05 from "@/assets/images/ps5.PNG";
+import specialities06 from "@/assets/images/ps6.PNG";
+import specialities07 from "@/assets/images/ps7.PNG";
+import { useParams, useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { MdArrowForwardIos } from "react-icons/md";
 
 const PopularSpecial = () => {
+  const router = useRouter();
+  const params= useParams()
+  
+
+  const handleClick = () => {
+    const locale = params.locale; 
+    router.push(`/${locale}/pages/searchResult`); 
+  };
   return (
     <>
       <div className="bg-white ">
-        <div className="w-[90%] mx-auto md:pt-20 pt-10 p-2">
+        <div className="w-[90%] mx-auto  p-2">
           <div>
             <h2 className="font-semibold text-4xl md:text-start text-center md:ps-10">Popular Specialities</h2>
           </div>
           <div className="grid grid-cols-2  md:gap-0 gap-4  md:grid-cols-3 lg:grid-cols-6 md:pt-20  ">
-            <div className="flex flex-col md:mt-0 mt-4  justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
-              <Image src={specialities01} className="rounded-full" />
-              <p className="text-center pt-3 text-gray-500">Urology</p>
-            </div>
+          <button
+      onClick={handleClick}
+      className="flex flex-col md:mt-0 mt-4 justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto bg-transparent border-none cursor-pointer">
+      <Image src={specialities01} className="rounded-full" />
+      <p className="text-center pt-3 text-gray-500">Urology</p>
+    </button>
             <div className="flex flex-col md:mt-0 mt-4 justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
               <Image src={specialities02} className="rounded-full" />
               <p className="text-center pt-3 text-gray-500"> Neurology</p>
@@ -38,8 +52,20 @@ const PopularSpecial = () => {
               <p className="text-center pt-3 text-gray-500">Dentist</p>
             </div>
             <div className="flex flex-col  md:mt-0 mt-4  justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
-              <Image src={specialities01} className="rounded-full" />
-              <p className="text-center pt-3 text-gray-500">Urology</p>
+              <Image src={specialities06} className="rounded-full " />
+              <p className="text-center pt-3 text-gray-500">Gynocology</p>
+            </div>
+            <div className="flex flex-col  md:mt-0 mt-4  justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
+              <Image src={specialities07} className="rounded-full " />
+              <p className="text-center pt-3 text-gray-500">Gynocology</p>
+            </div>
+            <div className="flex flex-col  md:mt-0 mt-4  justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
+              <Image src={specialities06} className="rounded-full " />
+              <p className="text-center pt-3 text-gray-500">Gynocology</p>
+            </div>
+            <div className="flex flex-col  md:mt-0 mt-4  justify-center items-center shadow-xl p-3 rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] mx-auto">
+              <Image src={specialities07} className="rounded-full " />
+              <p className="text-center pt-3 text-gray-500">Gynocology</p>
             </div>
           </div>
           <div className="mt-20 flex justify-center">

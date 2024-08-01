@@ -1,5 +1,5 @@
 module.exports = {
-    locales: ['en', 'ar'], // Add your supported locales here
+    locales: ['en', 'ar','ku'], 
     defaultLocale: 'en',
-    // Add any additional configuration options here
+   
   };

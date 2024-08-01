@@ -4,7 +4,7 @@ import { useEffect } from "react";
 // import 'aos/dist/aos.css'; // Import the AOS CSS file
 import Doctors from "./pages/doctors/Doctors";
 import Home from "./pages/home/Home";
-import Profile from "./pages/profile/page";
+import Profile from "./[locale]/pages/profile/page";
 
 
 export default function App() {
@@ -16,9 +16,9 @@ export default function App() {
 
   return (
     <main className="min-h-screen">
-      <Home />
+      {/* <Home /> */}
       {/* <Doctors /> */}
-     
+      {/* <Profile /> */}
     </main>
   );
 }
