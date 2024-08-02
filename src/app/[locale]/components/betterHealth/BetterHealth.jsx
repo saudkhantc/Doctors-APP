@@ -78,7 +78,7 @@ const BetterHealth=()=>{
     
     return(
         <>
-         <div className="  bg-white   h-screen  flex md:flex-row gap-6 flex-col    " 
+         <div className="  bg-white   h-screen md:items-start md:justify-start items-center justify-center flex md:flex-row gap-6 flex-col    " 
       //   style={{
       //   backgroundImage: `url(${img4.src})`,
       //   backgroundSize: "cover", 
@@ -89,13 +89,13 @@ const BetterHealth=()=>{
     > 
          <div className="flex flex-col gap-10 ropa-sans-regular w-[60vw] z-10  md:pt-20 md:pl-14">
          <div className="dev1 flex flex-col gap-4 items-center">
-         <h1 className="md:text-4xl text-3xl text-[#2A7798] font-semibold">{t('Title')}</h1>
-         <p className="text-[#2A7798] text-xl ">{t('sub-title')}</p>
+         <h1 className="md:text-4xl text-2xl text-[#2A7798] font-semibold">{t('Title')}</h1>
+         <p className="text-[#2A7798] md:text-xl  ">{t('sub-title')}</p>
          </div>
 
          <div className="dev2 flex md:flex-row flex-col items-center justify-center gap-4 ">
          
-         <div className="relative w-[270px]">
+         <div className="relative md:w-[270px]">
       <div className="flex items-center relative   border  border-[#2A7798] ">
         <input
           type="text"
@@ -175,7 +175,7 @@ const BetterHealth=()=>{
 
         
 
-         <div className="flex flex-col gap-2 w-[290px]">
+         <div className="flex flex-col gap-2 md:w-[290px] ">
          <div className="flex gap-2 items-center p-4  bg-white  border  border-[#2A7798] ">
          
          <input type="text" placeholder={t('FindBySpeciality')} className="md:w-[400px] outline-none" />

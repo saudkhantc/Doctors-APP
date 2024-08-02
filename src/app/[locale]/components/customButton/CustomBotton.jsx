@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CustomButton = ({ buttonText, width }) => {
+const CustomButton = ({ buttonText, width, onClick }) => {
   const buttonStyle = {
     width: width,
     padding: '10px 20px',
-    backgroundColor: '#31A598',
+    backgroundColor: '#049AEE',
     color: '#fff',
     border: 'none',
     borderRadius: '4px',
@@ -14,7 +14,7 @@ const CustomButton = ({ buttonText, width }) => {
   };
 
   return (
-    <button style={buttonStyle}>
+    <button style={buttonStyle} onClick={onClick}>
       {buttonText}
     </button>
   );
