@@ -8,7 +8,15 @@
             "Login": "Têkevin",
             "Erbil": "Erbîl",
         "Duhok": "Duhok",
-        "Silemani": "Silêmanî"
+        "Silemani": "Silêmanî",
+        "Popular":"Taybetmendiyên populer",
+        "Uro":"Urology",
+        "Neuro":"Neurology",
+        "Ortho":"ortopedîk",
+        "Cardio":"dilnas",
+        "Dent":"Pizişka didanan",
+        "Gyno":"jineolojî",
+        "Gas":"Gastroenterology"
         }
     }
 }

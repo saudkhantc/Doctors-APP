@@ -8,7 +8,15 @@
             "Login":"Log in",
             "Erbil": "Erbil",
         "Duhok": "Duhok",
-        "Silemani": "Silemani"
+        "Silemani": "Silemani",
+        "Popular":"Popular Specialities",
+        "Uro":"Urology",
+        "Neuro":"Neurology",
+        "Ortho":"Orthopedic",
+        "Cardio":"Cardiologist",
+        "Dent":"Dentist",
+        "Gyno":"Gynocology",
+        "Gas":"Gastroenterology"
         }
     }
 }
