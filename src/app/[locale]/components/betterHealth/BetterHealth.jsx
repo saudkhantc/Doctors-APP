@@ -175,7 +175,7 @@ const BetterHealth=()=>{
 
         
 
-         <div className="flex flex-col gap-2 md:w-[290px] ">
+         <div className="flex flex-col gap-2 md:w-[290px]  ">
          <div className="flex gap-2 items-center p-4  bg-white  border  border-[#2A7798] ">
          
          <input type="text" placeholder={t('FindBySpeciality')} className="md:w-[400px] outline-none" />
